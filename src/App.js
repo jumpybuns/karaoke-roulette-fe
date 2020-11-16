@@ -57,7 +57,7 @@ export default class App extends Component {
                 </>}
           </ul>
           <Switch>
-            {/* <Route exact path='/' render={(routerProps) => <Home {...routerProps} />} /> */}
+
             <Route exact path='/login' render={(routerProps) =>
               <Login
                 {...routerProps}

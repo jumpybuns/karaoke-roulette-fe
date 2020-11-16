@@ -22,7 +22,7 @@ export default class SignUp extends Component {
 
         this.props.changeTokenAndUsername(user.body.email, user.body.token);
 
-        this.props.history.push('/');
+        this.props.history.push('/home');
     }
 
 
@@ -33,13 +33,13 @@ export default class SignUp extends Component {
             <div>
                 <h2>Sign Up</h2>
                 <form onSubmit={this.handleSubmit}>
-                    <label>
+                    <label className="email">
                         Email:
                         <input
                             onChange={(e) => this.setState({ email: e.target.value })}
                             value={this.state.email} />
                     </label>
-                    <label>
+                    <label className="pass">
                         Password:
                         <input
                             onChange={(e) => this.setState({ password: e.target.value })}
