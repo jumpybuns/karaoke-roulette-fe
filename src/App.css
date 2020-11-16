@@ -1,5 +1,19 @@
-.App {
+body {
   text-align: center;
+  background-image: url("./kar.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 950px;
+}
+.home {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Times New Roman', Times, serif;
+  color: red;
+  text-shadow: black 1px 1px;
+  font-weight: bold;
+  
+
 }
 
 .App-logo {
@@ -12,7 +26,30 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+h2 {
+  color:purple;
+}
+.log {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+  text-align: center;
+  color: yellow;
+  font-size: 2em;
+  font-family: cursive;
+}
+.sign {
+  text-align: center;
+  color: yellow;
+  font-size: 2em;
+  font-family: cursive;
+}
+.email {
+  color: yellow;
+}
+.pass {
+  color: yellow;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
