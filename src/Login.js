@@ -14,14 +14,14 @@ export default class Login extends Component {
 
         this.setState({ loading: true })
         const user = await request
-            .post('')
+            .post('https://rocky-dawn-10139.herokuapp.com/auth/signin')
             .send(this.state);
 
         this.setState({ loading: false })
 
         this.props.changeTokenAndUsername(user.body.email, user.body.token);
 
-        this.props.history.push('/home');
+        this.props.history.push('/');
     }
 
 
@@ -30,9 +30,15 @@ export default class Login extends Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <h2>Login</h2>
+                    <h2>Log in</h2>
                     <label>
                         Email:
+                        <input
+                            onChange={(e) => this.setState({ email: e.target.value })}
+                            value={this.state.email} />
+                    </label>
+                    <label>
+                        Password:
                         <input
                             onChange={(e) => this.setState({ password: e.target.value })}
                             value={this.state.password} type="password" />
@@ -41,12 +47,10 @@ export default class Login extends Component {
                         this.state.loading
                             ? 'loading...'
                             : <button>
-                                Login!
+                                Log In!
                         </button>
                     }
                 </form>
-
-
             </div>
         )
     }
