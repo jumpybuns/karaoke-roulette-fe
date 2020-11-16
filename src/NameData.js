@@ -356,3 +356,4 @@ const nameData = {
         "wrath"
     ]
 }
+export default nameData;

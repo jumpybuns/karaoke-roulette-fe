@@ -11,6 +11,8 @@ import SignUp from './SignUp.js'
 import Home from './Home.js'
 import PrivateRoute from './PrivateRoute.js'
 
+// import Favorites from './Favorites'
+
 export default class App extends Component {
   state = {
     username: localStorage.getItem('USERNAME') || '',
@@ -55,7 +57,7 @@ export default class App extends Component {
                 </>}
           </ul>
           <Switch>
-            <Route exact path='/' render={(routerProps) => <Home {...routerProps} />} />
+            {/* <Route exact path='/' render={(routerProps) => <Home {...routerProps} />} /> */}
             <Route exact path='/login' render={(routerProps) =>
               <Login
                 {...routerProps}
@@ -63,6 +65,8 @@ export default class App extends Component {
               />
             }
             />
+
+
             <Route
               exact
               path='/signup'

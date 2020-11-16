@@ -15,14 +15,14 @@ export default class SignUp extends Component {
 
         this.setState({ loading: true })
         const user = await request
-        .post('')
-        .send(this.state);
+            .post('https://rocky-dawn-10139.herokuapp.com/auth/signup')
+            .send(this.state);
 
         this.setState({ loading: false })
 
-        this.props.changeTokenAndUserName(user.body.email, user, body.token);
+        this.props.changeTokenAndUsername(user.body.email, user.body.token);
 
-        this.props.history.push('/home')
+        this.props.history.push('/');
     }
 
 
@@ -36,19 +36,25 @@ export default class SignUp extends Component {
                     <label>
                         Email:
                         <input
+                            onChange={(e) => this.setState({ email: e.target.value })}
+                            value={this.state.email} />
+                    </label>
+                    <label>
+                        Password:
+                        <input
                             onChange={(e) => this.setState({ password: e.target.value })}
                             value={this.state.password} type="password" />
                     </label>
                     {
                         this.state.loading
-                        ? 'Loading...'
-                        : <button>
-                            Sign Up!
-                            
+                            ? 'loading...'
+                            : <button>
+                                Sign Up!
                         </button>
+
                     }
+
                 </form>
-                
             </div>
         )
     }
