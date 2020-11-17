@@ -73,3 +73,7 @@ h2 {
     transform: rotate(360deg);
   }
 }
+
+.bio {
+  color:white;
+}
