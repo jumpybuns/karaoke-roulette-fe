@@ -75,5 +75,7 @@ h2 {
 }
 
 .bio {
-  color:white;
+  display: flex;
+  flex: wrap;
+  color: white;
 }
