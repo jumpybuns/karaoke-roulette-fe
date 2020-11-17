@@ -25,6 +25,9 @@ export default class VideoPage extends Component {
 
     }
 
+    handleClick = async () => {
+        await this.fetchVideos()
+    }
 
     render() {
 
@@ -50,11 +53,12 @@ export default class VideoPage extends Component {
                         </label>
                         
                 </form>
-                         {/* <div className='reloadVideoButton'>
-                              <button onClick={window.location.reload()}>
+                         <div className='reloadVideoButton'>
+                              <button onClick={this.handleClick}>
                                  Select a new Randomized song!  
                              </button>
-                         </div> */}
+                         </div>
+                    
 
             </div>
         )
