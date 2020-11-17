@@ -6,6 +6,7 @@ export default class Header extends Component {
         return (
             <div>
                 <ul>
+                    
                     <li><NavLink  to='/home'  activeStyle={{display: 'none'}}>Home</NavLink> </li>
                     
                     <li><NavLink to='/videos'  activeStyle={{display: 'none'}}>Karaoke Room</NavLink> </li>
@@ -13,13 +14,9 @@ export default class Header extends Component {
                     <li><NavLink  to='/favorites'  activeStyle={{display: 'none'}}>Favorites</NavLink> </li>
 
                     <li><NavLink  to='/aboutus'  activeStyle={{display: 'none'}}> About Us </NavLink> </li>
-                </ul>
 
-                 
-                    {/* <NavLink to='/' >Home</NavLink> 
-                    <NavLink to='/videos' >Karaoke Room</NavLink> 
-                    <NavLink to='.favorites' >Favorites</NavLink> 
-                    <NavLink to='./aboutus' >About Us</NavLink>  */}
+
+                </ul>          
              
             </div>
         )

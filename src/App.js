@@ -65,9 +65,6 @@ export default class App extends Component {
                 </>}
           </ul>
           <Switch>
-
-
-
             <Route exact path='/login' render={(routerProps) =>
               <Login
                 {...routerProps}
@@ -76,10 +73,9 @@ export default class App extends Component {
             }
             />
 
-
             <Route
               exact
-              path='/'
+              path='/signup'
               render={(routerProps) =>
                 <SignUp
                   {...routerProps}
@@ -134,15 +130,11 @@ export default class App extends Component {
                 <AboutUs
                   {...routerProps}
                   changeTokenAndUsername={this.changeTokenAndUsername}
+                  token={this.state.token} 
                 />
               }
             />
-
           </Switch>
-
-
-
-
         </Router>
       </div>
     )
