@@ -6,7 +6,7 @@ export default class Header extends Component {
         return (
             <div>
                 <ul>
-                    <li><NavLink  to='/' >Home</NavLink> </li>
+                    <li><NavLink  to='/home' >Home</NavLink> </li>
                     <li><NavLink to='/videos' >Karaoke Room</NavLink> </li>
                     <li><NavLink to='/favorites' >Favorites</NavLink> </li>
                     <li><NavLink to='/aboutus' >About Us</NavLink> </li>
