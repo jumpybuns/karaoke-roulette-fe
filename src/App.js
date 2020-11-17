@@ -55,7 +55,7 @@ export default class App extends Component {
           <ul>
             {
               this.state.token
-                ? <Header/>
+                ? <Header />
                 : <>
                   <Link to="/login"><div className="log">Log in</div></Link>
                   <Link to="/signup"><div className="sign">Sign up</div></Link>
@@ -64,8 +64,8 @@ export default class App extends Component {
                 </>}
           </ul>
           <Switch>
-         
-          
+
+
 
             <Route exact path='/login' render={(routerProps) =>
               <Login
@@ -78,7 +78,7 @@ export default class App extends Component {
 
             <Route
               exact
-              path='/signup'
+              path='/'
               render={(routerProps) =>
                 <SignUp
                   {...routerProps}
@@ -86,55 +86,55 @@ export default class App extends Component {
                 />
               }
             />
-             
-          <PrivateRoute
+
+            <PrivateRoute
               token={this.state.token}
               exact
               path='/home'
               render={(routerProps) => <Home {...routerProps} token={this.state.token} />} />
 
-               <PrivateRoute
-              token={this.state.token} 
+            <PrivateRoute
+              token={this.state.token}
               exact
               path='/videos'
               render={(routerProps) =>
                 <VideoPage
                   {...routerProps}
                   changeTokenAndUsername={this.changeTokenAndUsername}
-                  token={this.state.token} 
+                  token={this.state.token}
                 />
               }
             />
-           
+
             <PrivateRoute
-              token={this.state.token} 
+              token={this.state.token}
               exact
               path='/favorites'
               render={(routerProps) =>
                 <Favorites
                   {...routerProps}
                   changeTokenAndUsername={this.changeTokenAndUsername}
-                  token={this.state.token} 
+                  token={this.state.token}
                 />
               }
             />
-                <PrivateRoute
-                token={this.state.token} 
-                exact
-                path='/aboutus'
-                render={(routerProps) =>
+            <PrivateRoute
+              token={this.state.token}
+              exact
+              path='/aboutus'
+              render={(routerProps) =>
                 <AboutUs
                   {...routerProps}
                   changeTokenAndUsername={this.changeTokenAndUsername}
-                  
+
                 />
               }
             />
-             
-          </Switch>
-      
 
-       
+          </Switch>
+
+
+
 
         </Router>
       </div>
