@@ -3,39 +3,40 @@ import request from 'superagent';
 
 
 export default class Home extends Component {
-    state= {
+    state = {
         name: '',
         lastName: '',
     }
+
     // fetchName = async () => {
     //     const response = await request
     //     .get('https://rocky-dawn-10139.herokuapp.com/random-name');
     //     await this.setState({toDoList: response.body});
-       
+
     // }
-      fetchName = async () => {
+    fetchName = async () => {
         const response = await request
-        .get('http://localhost:3000/random-name');
-        await this.setState({name: response.body.name, lastName: response.body.last_name});
-       console.log(response.body)
+            .get('https://rocky-dawn-10139.herokuapp.com/api/random-name')
+            .set('Authorization', this.props.token)
+        this.setState({ name: response.body.name, lastName: response.body.last_name });
+
     }
 
     componentDidMount = async () => {
-        this.fetchName();
+        await this.fetchName();
     }
     buttonClick = async (e) => {
         e.preventDefault();
 
-        await this.fetchName();
+        this.fetchName();
     }
-    render() 
-     
-    {
+    render() {
+        console.log(this.props.token)
         return (
             <div className="home">
                 <button onClick={this.buttonClick}>button</button>
 
-        <h1> {this.state.name} {this.state.lastName}</h1>
+                <h1> {this.state.name} {this.state.lastName}</h1>
 
 
 
