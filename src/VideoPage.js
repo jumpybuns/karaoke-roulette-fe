@@ -3,7 +3,7 @@ import request from 'superagent';
 
 export default class VideoPage extends Component {
     state = {
-        videos: [],
+        videos: {},
         title: '',
         thumbnail: '',
         loading: false
@@ -18,7 +18,7 @@ export default class VideoPage extends Component {
         const { token } = this.props;
 
         await this.setState({ loading: true });
-        const response = await request.get('https://rocky-dawn-10139.herokuapp.com/api/videos')
+        const response = await request.get('https://rocky-dawn-10139.herokuapp.com/api/random-videos')
         .set('Authorization', token)
 
         await this.setState({ videos: response.body, loading: false })
@@ -39,15 +39,20 @@ export default class VideoPage extends Component {
                 <form >
                     <label>
                          
-                        {/* <div>
-                            <iframe title="youTubeVideo" id="player" type="text/html" width="640" height="390"
+                        <div>
+                            {/* <iframe title="youTubeVideo" id="player" type="text/html" width="640" height="390"
 
-                                src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com"
+                                src={`https://www.youtube.com/watch?v=${this.state.videos.videoId}`} 
                                 frameborder="0">
 
-                            </iframe>
-                            </div> */}
-                 
+                            </iframe> */}
+                            <iframe title="youTubeVideo" id="player" type="text/html" width="640" height="390"
+  src={`http://www.youtube.com/embed/${this.state.videos.videoId}?enablejsapi=1&origin=http://example.com`}
+  frameborder="0"></iframe>
+                            </div>
+
+                    
+
                         <button>
                             Select a new Randomized song!                             
                         </button>
