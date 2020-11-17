@@ -10,7 +10,11 @@ import Login from './Login.js'
 import SignUp from './SignUp.js'
 import Home from './Home.js'
 import PrivateRoute from './PrivateRoute.js'
+
 import VideoPage from './VideoPage.js'
+
+import AboutUs from './AboutUs';
+
 
 // import Favorites from './Favorites'
 
@@ -55,6 +59,8 @@ export default class App extends Component {
                 : <>
                   <Link to="/login"><div className="log">Log in</div></Link>
                   <Link to="/signup"><div className="sign">Sign up</div></Link>
+                  <Link to="/aboutus"><div className="about">About Us</div></Link>
+
                 </>}
           </ul>
           <Switch>
@@ -84,7 +90,21 @@ export default class App extends Component {
               path='/home'
               render={(routerProps) => <Home {...routerProps} token={this.state.token} />} />
 
+
            
+
+          </Switch>
+          <Route
+              exact
+              path='/aboutus'
+              render={(routerProps) =>
+                <AboutUs
+                  {...routerProps}
+                  changeTokenAndUsername={this.changeTokenAndUsername}
+                />
+              }
+            />
+
 
         </Router>
       </div>
