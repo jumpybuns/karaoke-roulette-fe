@@ -6,7 +6,7 @@ export default class Header extends Component {
         return (
             <div>
                 <ul>
-
+                    
                     <li><NavLink  to='/home'  activeStyle={{display: 'none'}}>Home</NavLink> </li>
                     
                     <li><NavLink to='/videos'  activeStyle={{display: 'none'}}>Karaoke Room</NavLink> </li>
