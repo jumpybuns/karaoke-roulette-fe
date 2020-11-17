@@ -6,14 +6,15 @@ import {
   Link,
 } from "react-router-dom";
 import './App.css';
-import Login from './Login.js'
-import SignUp from './SignUp.js'
-import Home from './Home.js'
-import PrivateRoute from './PrivateRoute.js'
+import Login from './Login.js';
+import SignUp from './SignUp.js';
+import Home from './Home.js';
+import PrivateRoute from './PrivateRoute.js';
 
-import VideoPage from './VideoPage.js'
+import VideoPage from './VideoPage.js';
 
-import AboutUs from './AboutUs';
+import AboutUs from './AboutUs.js';
+import Favorites from './Favorites.js';
 
 
 // import Favorites from './Favorites'
@@ -84,27 +85,53 @@ export default class App extends Component {
                 />
               }
             />
-            <PrivateRoute
+          <PrivateRoute
               token={this.state.token}
               exact
               path='/home'
               render={(routerProps) => <Home {...routerProps} token={this.state.token} />} />
 
-
-           
-
-          </Switch>
-          <Route
+               <PrivateRoute
+              token={this.state.token} 
               exact
-              path='/aboutus'
+              path='/videos'
               render={(routerProps) =>
-                <AboutUs
+                <VideoPage
                   {...routerProps}
                   changeTokenAndUsername={this.changeTokenAndUsername}
+                  token={this.state.token} 
                 />
               }
             />
 
+            <PrivateRoute
+              token={this.state.token} 
+              exact
+              path='/favorites'
+              render={(routerProps) =>
+                <Favorites
+                  {...routerProps}
+                  changeTokenAndUsername={this.changeTokenAndUsername}
+                  token={this.state.token} 
+                />
+              }
+            />
+                <PrivateRoute
+                token={this.state.token} 
+                exact
+                path='/aboutus'
+                render={(routerProps) =>
+                <AboutUs
+                  {...routerProps}
+                  changeTokenAndUsername={this.changeTokenAndUsername}
+                  
+                />
+              }
+            />
+          </Switch>
+      
+
+       
 
         </Router>
       </div>
