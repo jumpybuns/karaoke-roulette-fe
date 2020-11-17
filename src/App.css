@@ -74,3 +74,9 @@ h2 {
     transform: rotate(360deg);
   }
 }
+
+.bio {
+  display: flex;
+  flex: wrap;
+  color: white;
+}
