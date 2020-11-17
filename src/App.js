@@ -22,11 +22,12 @@ import Header from './Header';
 // import Favorites from './Favorites'
 
 export default class App extends Component {
+
   state = {
     username: localStorage.getItem('USERNAME') || '',
     token: localStorage.getItem('TOKEN') || '',
-
   }
+
 
   changeTokenAndUsername = (userName, token) => {
     localStorage.setItem('TOKEN', token);
@@ -59,7 +60,7 @@ export default class App extends Component {
                 : <>
                   <Link to="/login"><div className="log">Log in</div></Link>
                   <Link to="/signup"><div className="sign">Sign up</div></Link>
-                  <Link to="/aboutus"><div className="about">About Us</div></Link>
+                  {/* <Link to="/aboutus"><div className="about">About Us</div></Link> */}
 
                 </>}
           </ul>
@@ -91,7 +92,14 @@ export default class App extends Component {
               token={this.state.token}
               exact
               path='/home'
-              render={(routerProps) => <Home {...routerProps} token={this.state.token} />} />
+              render={(routerProps) => 
+              <Home 
+              {...routerProps}
+              changeTokenAndUsername={this.changeTokenAndUsername}
+              token={this.state.token} 
+              />
+              } 
+              />
 
             <PrivateRoute
               token={this.state.token}
@@ -126,6 +134,9 @@ export default class App extends Component {
                 <AboutUs
                   {...routerProps}
                   changeTokenAndUsername={this.changeTokenAndUsername}
+
+                  token={this.state.token} 
+
 
                 />
               }
