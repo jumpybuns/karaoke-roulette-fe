@@ -5,13 +5,13 @@ export default class Home extends Component {
     render() {
         return (
             <div className="home">
-                you are HOME
-        
-
-              
+                <button>button</button>you are HOME
 
 
-                
+
+
+
+
             </div>
         )
     }
