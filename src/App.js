@@ -10,7 +10,11 @@ import Login from './Login.js'
 import SignUp from './SignUp.js'
 import Home from './Home.js'
 import PrivateRoute from './PrivateRoute.js'
+
+import VideoPage from './VideoPage.js'
+
 import AboutUs from './AboutUs';
+
 
 // import Favorites from './Favorites'
 
@@ -85,6 +89,10 @@ export default class App extends Component {
               exact
               path='/home'
               render={(routerProps) => <Home {...routerProps} token={this.state.token} />} />
+
+
+           
+
           </Switch>
           <Route
               exact
@@ -96,6 +104,7 @@ export default class App extends Component {
                 />
               }
             />
+
 
         </Router>
       </div>
