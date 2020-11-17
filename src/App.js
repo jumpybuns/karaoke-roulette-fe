@@ -6,13 +6,16 @@ import {
   Link,
 } from "react-router-dom";
 import './App.css';
-import Login from './Login.js'
-import SignUp from './SignUp.js'
-import Home from './Home.js'
-import PrivateRoute from './PrivateRoute.js'
-import VideoPage from './VideoPage.js'
-import AboutUs from './AboutUs';
+import Login from './Login.js';
+import SignUp from './SignUp.js';
+import Home from './Home.js';
+import PrivateRoute from './PrivateRoute.js';
+
+import VideoPage from './VideoPage.js';
+
+import AboutUs from './AboutUs.js';
 import Favorites from './Favorites.js';
+
 
 // import Favorites from './Favorites'
 
