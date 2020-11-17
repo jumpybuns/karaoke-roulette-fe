@@ -15,6 +15,8 @@ import VideoPage from './VideoPage.js';
 
 import AboutUs from './AboutUs.js';
 import Favorites from './Favorites.js';
+import Header from './Header';
+
 
 
 // import Favorites from './Favorites'
@@ -53,10 +55,7 @@ export default class App extends Component {
           <ul>
             {
               this.state.token
-                ? <div>
-                  {this.state.username}
-                  <button onClick={this.logOut}>Log Out</button>
-                </div>
+                ? <Header/>
                 : <>
                   <Link to="/login"><div className="log">Log in</div></Link>
                   <Link to="/signup"><div className="sign">Sign up</div></Link>
@@ -65,6 +64,8 @@ export default class App extends Component {
                 </>}
           </ul>
           <Switch>
+         
+          
 
             <Route exact path='/login' render={(routerProps) =>
               <Login
@@ -85,6 +86,7 @@ export default class App extends Component {
                 />
               }
             />
+             
           <PrivateRoute
               token={this.state.token}
               exact
@@ -103,7 +105,7 @@ export default class App extends Component {
                 />
               }
             />
-
+           
             <PrivateRoute
               token={this.state.token} 
               exact
@@ -128,6 +130,7 @@ export default class App extends Component {
                 />
               }
             />
+             
           </Switch>
       
 

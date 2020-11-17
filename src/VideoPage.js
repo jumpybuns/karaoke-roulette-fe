@@ -40,25 +40,21 @@ export default class VideoPage extends Component {
                     <label>
                          
                         <div>
-                            {/* <iframe title="youTubeVideo" id="player" type="text/html" width="640" height="390"
-
-                                src={`https://www.youtube.com/watch?v=${this.state.videos.videoId}`} 
-                                frameborder="0">
-
-                            </iframe> */}
+                          
                             <iframe title="youTubeVideo" id="player" type="text/html" width="640" height="390"
-  src={`http://www.youtube.com/embed/${this.state.videos.videoId}?enablejsapi=1&origin=http://example.com`}
-  frameborder="0"></iframe>
+                            src={`http://www.youtube.com/embed/${this.state.videos.videoId}?enablejsapi=1&origin=http://example.com`}
+                            frameborder="0"></iframe>
                             </div>
 
-                    
-
-                        <button>
-                            Select a new Randomized song!                             
-                        </button>
+                        
                         </label>
+                        
                 </form>
-
+                         {/* <div className='reloadVideoButton'>
+                              <button onClick={window.location.reload()}>
+                                 Select a new Randomized song!  
+                             </button>
+                         </div> */}
 
             </div>
         )
