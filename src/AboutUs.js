@@ -68,7 +68,7 @@ export default class AboutUs extends Component {
 
                     <img className="ethanimg" alt="Ethan" src={Ethan} height="150px" />
                     <p>Ethan Pierce</p>
-                    <p>This person is a person and whooo boy, what a person <br />
+                    <p>Hey person is a person and whooo boy, what a person <br />
                         <a href="https://www.linkedin.com/in/ethanpiercepresents/">
                             <img className='linkedinlogo' alt="linkedinlogo" src={Linkedin} height="55px" />
                         </a>
