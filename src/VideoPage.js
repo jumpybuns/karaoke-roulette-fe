@@ -23,7 +23,7 @@ export default class VideoPage extends Component {
 
         await this.setState({ loading: true });
 
-        const response = await request.get('http://localhost:4000/api/random-videos')
+        const response = await request.get('https://rocky-dawn-10139.herokuapp.com/random-videos')
             .set('Authorization', token)
 
 
@@ -79,28 +79,28 @@ export default class VideoPage extends Component {
 
                             </label>
 
-                          
 
-                        <div className='favoritevideobuttondiv'>
-                            <button onClick={this.handleFavorite} className='favoritevideobutton'>
-                                Save video to favorites
+
+                            <div className='favoritevideobuttondiv'>
+                                <button onClick={this.handleFavorite} className='favoritevideobutton'>
+                                    Save video to favorites
+                             </button>
+                            </div>
+
+
+
+
+                        </form>
+
+
+                        <div className='reloadVideoButton'>
+                            <button className='videobutton' onClick={this.handleClick}>
+                                Select a new Randomized song!
                              </button>
                         </div>
 
-
-                     
-
-                    </form>
-
-
-                    <div className='reloadVideoButton'>
-                        <button className='videobutton' onClick={this.handleClick}>
-                            Select a new Randomized song!
-                             </button>
                     </div>
-
                 </div>
-            </div>
             </>
 
 
