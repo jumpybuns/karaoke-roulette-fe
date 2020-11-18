@@ -15,7 +15,7 @@ export default class Home extends Component {
     // }
     fetchName = async () => {
         const response = await request
-            .get('https://rocky-dawn-10139.herokuapp.com/api/random-name')
+            .get('http://localhost:3000/api/random-name')
             .set('Authorization', this.props.token)
         await this.setState({ name: response.body.name, lastName: response.body.last_name });
         console.log(response.body)
