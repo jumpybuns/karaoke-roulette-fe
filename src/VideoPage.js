@@ -23,7 +23,7 @@ export default class VideoPage extends Component {
 
         await this.setState({ loading: true });
         const response = await request.get('http://localhost:3000/api/random-videos')
-        .set('Authorization', token)
+            .set('Authorization', token)
 
         await this.setState({ videos: response.body, loading: false })
 
@@ -38,63 +38,62 @@ export default class VideoPage extends Component {
         const favorite = {
             videoId: videoId,
             title: title,
-            thumbnails: thumbnails 
+            thumbnails: thumbnails
         };
-        console.log(favorite)
+        console.log(this.props.token)
         await request
             .post(`${process.env.REACT_APP_BACK_END_URL}/api/favorites`)
             .set('Authorization', this.props.token)
             .send(favorite);
-        
-        await this.fetchFavorites();
+
     }
     render() {
 
-       
+
         // const randomIndex =  Math.floor(Math.random()*(this.state.videos.length-1))
         // console.log(this.state.videos);
-        
+
 
         return (
-            
-       <>     
 
-            <div className="video-page">
-                <div>
-                      
-               
-                <form>
-                    <label>
-                         
-                        <div>
-                          
-                            <iframe title="youTubeVideo" id="player" type="text/html" width="640" height="390"
-                            src={`http://www.youtube.com/embed/${this.state.videos.videoId}?enablejsapi=1&origin=http://example.com`}
-                            frameBorder="0"></iframe>
-                            </div>
+            <>
 
-                        
-                    </label>
-                       
-                </form>
-                       
-                            <div className='favoritevideobuttondiv'>
-                              <button onClick={this.handleFavorite} className='favoritevideobutton'>
-                                 Save video to favorites
+                <div className="video-page">
+                    <div>
+
+
+                        <form>
+                            <label>
+
+                                <div>
+
+                                    <iframe title="youTubeVideo" id="player" type="text/html" width="640" height="390"
+                                        src={`http://www.youtube.com/embed/${this.state.videos.videoId}?enablejsapi=1&origin=http://example.com`}
+                                        frameBorder="0"></iframe>
+                                </div>
+
+
+                            </label>
+
+                        </form>
+
+                        <div className='favoritevideobuttondiv'>
+                            <button onClick={this.handleFavorite} className='favoritevideobutton'>
+                                Save video to favorites
                              </button>
-                            </div>
+                        </div>
 
-                          <div className='reloadVideoButton'>
-                              <button className='videobutton' onClick={this.handleClick}>
-                                 Select a new Randomized song!  
+                        <div className='reloadVideoButton'>
+                            <button className='videobutton' onClick={this.handleClick}>
+                                Select a new Randomized song!
                              </button>
-                         </div>
+                        </div>
 
+                    </div>
                 </div>
-            </div>
-           
+
             </>
-            
+
         )
     }
 }
