@@ -2,6 +2,27 @@
   text-align: center;
 } */
 
+.signup {
+  height: 1000px;
+  background-image: url("./karmic2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+  font-family: 'Staatliches', cursive;
+}
+
+.login {
+  height: 1000px;
+  background-image: url("./karmic2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+  font-family: 'Staatliches', cursive;
+}
 
 .home {
   height: 1000px;
