@@ -28,7 +28,7 @@ export default class Login extends Component {
 
     render() {
         return (
-            <div>
+            <div className='login'>
                 <form onSubmit={this.handleSubmit}>
                     <h2>Log in</h2>
                     <label>
