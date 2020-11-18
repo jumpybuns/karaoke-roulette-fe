@@ -60,4 +60,12 @@ export async function login(payload) {
         throw err;
     }
 }
-
+export async function getRandomVideo(payload) {
+    try {
+  
+        return await request.get(`${herokuBackend}api/random-videos`)
+        .set('Authorization', payload)
+    } catch(err) {
+        throw err;
+    }
+}

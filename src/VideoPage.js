@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import request from 'superagent';
+import { getRandomVideo } from './utils';
 
 
 
@@ -23,8 +24,8 @@ export default class VideoPage extends Component {
 
         await this.setState({ loading: true });
 
-        const response = await request.get('https://rocky-dawn-10139.herokuapp.com/random-videos')
-            .set('Authorization', token)
+        const response = await getRandomVideo(token)
+         
 
 
         await this.setState({ videos: response.body, loading: false })
