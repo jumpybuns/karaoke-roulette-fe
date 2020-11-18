@@ -41,7 +41,7 @@ font-weight:50;
 }
 .namebutton:hover {
   font-family: 'Staatliches', cursive;
-  background-color: rgb(154, 118, 190);
+  background-color: rgb(125, 173, 245);
   box-shadow: 5 5 5 #697da7;
 }
 
@@ -89,7 +89,7 @@ text-decoration: none;
 }
 
 a:hover {
-  color: rgb(177, 99, 250);
+  color: rgb(125, 173, 245);
 }
 
 .video-page {
@@ -135,7 +135,7 @@ margin-top:60px;
   font-size: 14px;
   border: none;
   border-radius: 2px;
-  background-color: rgb(207, 86, 231);  
+  background-color: rgb(125, 173, 245);  
   margin-top:15px;
   align-self: center;
 }
@@ -162,7 +162,7 @@ margin-top:60px;
 .videobutton:hover {
   font-family: 'Staatliches', cursive;
   font-size: 16px;
-  background-color: rgb(207, 86, 231);
+  background-color: rgb(125, 173, 245);
   box-shadow: 5 5 5 #e479e7;
 }
 
