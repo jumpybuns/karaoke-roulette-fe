@@ -7,10 +7,17 @@ const herokuBackend = 'https://rocky-dawn-10139.herokuapp.com/'
 // const localBackend = 'http://localhost:4000/';
 
 
-export async function fetchFavorites(someId) {
+export async function fetchFavorite(someId) {
     try{
-        const response = await request.get(`${herokuBackend}api/favorites/${someId}`);
-        return response.body;
+        return await request.get(`${herokuBackend}api/favorites/${someId}`);
+    } catch(e) {
+        throw e;
+    }
+}
+export async function fetchAllFavorites(payload) {
+    try{
+        return await request.get(`${herokuBackend}api/favorites`)
+        .set('Authorization', payload)
     } catch(e) {
         throw e;
     }
@@ -44,5 +51,13 @@ export async function randomName(payload) {
     }
 }
 
-
+export async function login(payload) {
+    try {
+  
+        return await request.post(`${herokuBackend}auth/signin`)
+        .send(payload);
+    } catch(err) {
+        throw err;
+    }
+}
 

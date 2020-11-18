@@ -1,19 +1,18 @@
 import React, { Component } from 'react'
 import request from 'superagent';
+import { fetchAllFavorites } from './utils';
 
 
 
 export default class Favorites extends Component {
     state = {
         favorites: [],
-        userId: this.state.owner_id
+
     }
 
 
     componentDidMount = async () => {
-        const response = await request
-            .get(`${process.env.REACT_APP_BACK_END_URL}/api/favorites`)
-            .set('Authorization', this.props.token)
+        const response = await fetchAllFavorites(this.props.token)
 
         this.setState({ favorites: response.body });
 
