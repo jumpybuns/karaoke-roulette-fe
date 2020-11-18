@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import request from 'superagent';
+import { randomName } from './utils';
 
 
 export default class Home extends Component {
@@ -14,9 +15,8 @@ export default class Home extends Component {
 
     // }
     fetchName = async () => {
-        const response = await request
-            .get('https://rocky-dawn-10139.herokuapp.com/random-name')
-            .set('Authorization', this.props.token)
+        const response = await randomName(this.props.token)
+        
         await this.setState({ name: response.body.name, lastName: response.body.last_name });
         console.log(response.body)
     }

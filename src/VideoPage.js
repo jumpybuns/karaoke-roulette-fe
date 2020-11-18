@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import request from 'superagent';
+import { addFavoriteVideo, getRandomVideo } from './utils';
 
 
 
@@ -20,13 +21,8 @@ export default class VideoPage extends Component {
 
     fetchVideos = async () => {
         const { token } = this.props;
-
         await this.setState({ loading: true });
-
-        const response = await request.get('https://rocky-dawn-10139.herokuapp.com/random-videos')
-            .set('Authorization', token)
-
-
+        const response = await getRandomVideo(token)
         await this.setState({ videos: response.body, loading: false })
 
     }
@@ -36,7 +32,8 @@ export default class VideoPage extends Component {
     }
 
 
-    handleFavorite = async () => {
+    handleFavorite = async (e) => {
+        e.preventDefault();
         const { thumbnails, title, videoId } = this.state.videos;
         const favorite = {
             videoId: videoId,
@@ -44,10 +41,7 @@ export default class VideoPage extends Component {
             thumbnails: thumbnails
         };
         console.log(this.props.token)
-        await request
-            .post(`${process.env.REACT_APP_BACK_END_URL}/api/favorites`)
-            .set('Authorization', this.props.token)
-            .send(favorite);
+        await addFavoriteVideo(this.props.token, favorite)
 
     }
 

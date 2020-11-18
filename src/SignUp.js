@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import request from 'superagent';
+import { signUp } from './utils';
 
 
 export default class SignUp extends Component {
@@ -14,9 +15,8 @@ export default class SignUp extends Component {
         e.preventDefault();
 
         this.setState({ loading: true })
-        const user = await request
-            .post('https://rocky-dawn-10139.herokuapp.com/auth/signup')
-            .send(this.state);
+        const user = await signUp(this.state)
+
 
         this.setState({ loading: false })
 
