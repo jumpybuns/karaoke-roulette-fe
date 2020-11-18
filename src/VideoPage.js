@@ -33,6 +33,21 @@ export default class VideoPage extends Component {
         await this.fetchVideos()
     }
 
+    handleFavorite = async () => {
+        const { thumbnails, title, videoId } = this.state.videos;
+        const favorite = {
+            videoId: videoId,
+            title: title,
+            thumbnails: thumbnails 
+        };
+        console.log(favorite)
+        await request
+            .post(`${process.env.REACT_APP_BACK_END_URL}/api/favorites`)
+            .set('Authorization', this.props.token)
+            .send(favorite);
+        
+        await this.fetchFavorites();
+    }
     render() {
 
        
@@ -64,7 +79,7 @@ export default class VideoPage extends Component {
                 </form>
                        
                             <div className='favoritevideobuttondiv'>
-                              <button className='favoritevideobutton'>
+                              <button onClick={this.handleFavorite} className='favoritevideobutton'>
                                  Save video to favorites
                              </button>
                             </div>
