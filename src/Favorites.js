@@ -4,8 +4,8 @@ import request from 'superagent';
 
 
 export default class Favorites extends Component {
-    state = { 
-        favorites : [],
+    state = {
+        favorites: [],
         userId: this.state.owner_id
     }
 
@@ -24,8 +24,8 @@ export default class Favorites extends Component {
             <div>
                 Favorites!!
                 <ul>
-                    { 
-                        !!this.state.favorites.length && this.state.favorites.map(fave => 
+                    {
+                        !!this.state.favorites.length && this.state.favorites.map(fave =>
                             <li>
                                 <div>{fave.id}</div>
                                 <div>{fave.videoId}</div>
