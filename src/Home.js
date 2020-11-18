@@ -29,7 +29,10 @@ export default class Home extends Component {
 
         await this.fetchName();
     }
-    render() {
+
+    render() 
+        // console.log(this.props.token);
+    {
         return (
             <div className="home">
                 <button onClick={this.buttonClick}>button</button>
