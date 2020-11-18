@@ -35,14 +35,25 @@ export default class Home extends Component {
     {
         return (
             <div className="home">
-                <button onClick={this.buttonClick}>button</button>
+                
+                <div className='topofhome'>
+                    <h1>Welcome to Karaoke Roulette! <br/> Your stage name is...</h1>
+                </div>
+                <h1 className='stagename'> {this.state.name}  {this.state.lastName}!</h1>
 
-                <h1> {this.state.name} {this.state.lastName}</h1>
+                <button className='namebutton' onClick={this.buttonClick}>
+                click here to select a different randomized name, if you dare to mess with destiny.
+                </button>
 
-
+                    <div className='home-instructions'>
+                    INSTRUCTIONS HERE
+                    </div>
 
 
             </div>
+
+
+
         )
     }
 }

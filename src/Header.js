@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom'
 export default class Header extends Component {
     render() {
         return (
-            <div>
-                <ul>
-                    
+            <div className='header'>
+                <ul className='headerul'>
+
                     <li><NavLink  to='/home'  activeStyle={{display: 'none'}}>Home</NavLink> </li>
                     
                     <li><NavLink to='/videos'  activeStyle={{display: 'none'}}>Karaoke Room</NavLink> </li>

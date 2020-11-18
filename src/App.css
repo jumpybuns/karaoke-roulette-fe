@@ -1,20 +1,245 @@
-body {
+/* body {
   text-align: center;
-  background-image: url("./karmic2.jpg");
+} */
+
+
+.home {
+  height: 1000px;
+  background-image: url("./dark-brick.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
-  height: 1350px;
-}
-.home {
-  text-align: center;
-  font-size: 2.5em;
-  font-family: 'Times New Roman', Times, serif;
-  color: red;
-  text-shadow: black 1px 1px;
-  font-weight: bold;
-  
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+  font-family: 'Staatliches', cursive;
 
+ font-weight: 50;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px;
+  font-weight: thin; 
+}
+
+.topofhome {
+font-family: 'Staatliches', cursive;
+font-size: 13px;
+font-weight:50;
+} 
+
+.home-instructions {
+  margin-top: 200px;
+  font-size: 15px;
+
+}
+
+.namebutton {
+  font-family: 'Staatliches', cursive;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(179, 164, 194);
+  
+}
+.namebutton:hover {
+  font-family: 'Staatliches', cursive;
+  background-color: rgb(154, 118, 190);
+  box-shadow: 5 5 5 #697da7;
+}
+
+.stagename {
+  position: 50%;
+  font-family: 'Monoton', cursive;
+  font-size: 65px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 50px rgb(177, 99, 250);
+  font-weight: 50;
+}
+
+.header {
+height: 32px;
+background-color: gray;
+border: solid gray none;
+margin: 5px;
+margin-bottom: 25px;
+margin-top:10px;
+}
+
+
+.headerul {
+display: flex;
+flex-direction: row;
+align-items: center;
+font-size: 1.4em;
+align-self: center;
+justify-content: center;
+margin-right: 95px;
+}
+
+li {
+  align-items: center;
+  list-style-type: none;
+  font-size: 13px;
+  margin: 10px;
+}
+
+a {
+color: black;
+font-family: 'Staatliches', cursive;
+
+}
+
+a:hover {
+  color: rgb(207, 86, 231);
+}
+
+.video-page {
+  height: 1000px;
+  background-image: url("./purple-blue-stage-wide.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+display: flex;
+justify-content: center;
+align-content: center;
+}
+
+form {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+iframe {
+margin-top:60px;
+}
+
+.favoritevideobuttondiv {
+  display: flex;
+  justify-content:center;
+  align-content: center;
+}
+
+.favoritevideobutton {
+  font-family: 'Staatliches', cursive;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  background-color: rgb(179, 164, 194);  
+  margin-top:15px;
+  align-self: center;
+}
+.favoritevideobutton:hover {
+  font-family: 'Staatliches', cursive;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  background-color: rgb(207, 86, 231);  
+  margin-top:15px;
+  align-self: center;
+}
+
+
+.reloadVideoButton {
+  display: flex;
+  justify-content:center;
+  align-content: center;
+
+}
+
+.videobutton {
+  
+  font-family: 'Staatliches', cursive;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(179, 164, 194);
+  padding: 15px;
+  margin-top:20px;
+  align-self: center;
+}
+.videobutton:hover {
+  font-family: 'Staatliches', cursive;
+  font-size: 16px;
+  background-color: rgb(207, 86, 231);
+  box-shadow: 5 5 5 #e479e7;
+}
+
+.favorites {
+  height: 1000px;
+  background-image: url("./dark-brick.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+  font-family: 'Staatliches', cursive;
+
+ font-weight: 50;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px;
+  font-weight: thin; 
+}
+
+.aboutus {
+  
+  height: 100%;
+  background-image: url("./dark-brick.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+  font-family: 'Staatliches', cursive;
+
+ font-weight: 50;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px;
+  font-weight: thin; 
+
+
+
+
+}
+
+.about-title {
+  font-size: 25px;
+}
+
+
+.bio {
+  font-size: 14px;
+ 
+  color: white;
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  line-height: .1px;
+}
+
+.sarahimg{
+display: flex;
+height: 80px;
+}
+
+.rhoneimg {
+  display: flex;
+  height: 80px;
+}
+
+.rayimg {
+  display: flex;
+  height: 80px;
+}
+
+.ethanimg {
+  display: flex;
+  height: 80px;
 }
 
 .App-logo {
@@ -27,9 +252,11 @@ body {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 h2 {
   color:purple;
 }
+
 .log {
   display: flex;
   justify-content: center;
@@ -45,12 +272,15 @@ h2 {
   font-size: 2em;
   font-family: cursive;
 }
+
 .email {
   color: yellow;
 }
+
 .pass {
   color: yellow;
 }
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -75,8 +305,4 @@ h2 {
   }
 }
 
-.bio {
-  display: flex;
-  flex: wrap;
-  color: white;
-}
+
