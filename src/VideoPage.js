@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import request from 'superagent';
 
+
+
+
+
 export default class VideoPage extends Component {
     state = {
         videos: {},
@@ -31,15 +35,20 @@ export default class VideoPage extends Component {
 
     render() {
 
+       
         // const randomIndex =  Math.floor(Math.random()*(this.state.videos.length-1))
         // console.log(this.state.videos);
-
+        
 
         return (
-            <div>
+            
+       <>     
+
+            <div className="video-page">
+                <div>
                       
                
-                <form >
+                <form>
                     <label>
                          
                         <div>
@@ -50,17 +59,27 @@ export default class VideoPage extends Component {
                             </div>
 
                         
-                        </label>
-                        
+                    </label>
+                       
                 </form>
-                         <div className='reloadVideoButton'>
-                              <button onClick={this.handleClick}>
+                       
+                            <div className='favoritevideobuttondiv'>
+                              <button className='favoritevideobutton'>
+                                 Save video to favorites
+                             </button>
+                            </div>
+
+                          <div className='reloadVideoButton'>
+                              <button className='videobutton' onClick={this.handleClick}>
                                  Select a new Randomized song!  
                              </button>
                          </div>
-                    
 
+                </div>
             </div>
+           
+            </>
+            
         )
     }
 }
