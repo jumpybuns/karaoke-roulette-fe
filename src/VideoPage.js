@@ -79,7 +79,7 @@ export default class VideoPage extends Component {
 
                             </label>
 
-                        </form>
+                          
 
                         <div className='favoritevideobuttondiv'>
                             <button onClick={this.handleFavorite} className='favoritevideobutton'>
@@ -88,7 +88,7 @@ export default class VideoPage extends Component {
                         </div>
 
 
-                        </label>
+                     
 
                     </form>
 
@@ -101,7 +101,7 @@ export default class VideoPage extends Component {
 
                 </div>
             </div>
-
+            </>
 
 
         )
