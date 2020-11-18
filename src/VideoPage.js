@@ -22,7 +22,7 @@ export default class VideoPage extends Component {
         const { token } = this.props;
 
         await this.setState({ loading: true });
-        const response = await request.get('https://rocky-dawn-10139.herokuapp.com/api/random-videos')
+        const response = await request.get('http://localhost:3000/api/random-videos')
         .set('Authorization', token)
 
         await this.setState({ videos: response.body, loading: false })
