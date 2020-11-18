@@ -84,11 +84,12 @@ li {
 a {
 color: black;
 font-family: 'Staatliches', cursive;
+text-decoration: none;
 
 }
 
 a:hover {
-  color: rgb(207, 86, 231);
+  color: rgb(177, 99, 250);
 }
 
 .video-page {
