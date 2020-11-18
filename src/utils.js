@@ -69,3 +69,13 @@ export async function getRandomVideo(payload) {
         throw err;
     }
 }
+export async function addFavoriteVideo(token, payload) {
+    try {
+  
+        return await request.post(`${herokuBackend}api/favorites`)
+        .set('Authorization', token)
+        .send(payload)
+    } catch(err) {
+        throw err;
+    }
+}
