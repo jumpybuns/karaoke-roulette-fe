@@ -23,7 +23,9 @@ export default class VideoPage extends Component {
 
         await this.setState({ loading: true });
         const response = await request.get('http://localhost:3000/api/random-videos')
+      
         .set('Authorization', token)
+
 
         await this.setState({ videos: response.body, loading: false })
 
@@ -50,14 +52,15 @@ export default class VideoPage extends Component {
     }
     render() {
 
-       
+
         // const randomIndex =  Math.floor(Math.random()*(this.state.videos.length-1))
         // console.log(this.state.videos);
-        
+
 
         return (
+
+
             
-       <>     
 
             <div className="video-page">
                 <div>
@@ -82,19 +85,19 @@ export default class VideoPage extends Component {
                               <button onClick={this.handleFavorite} className='favoritevideobutton'>
                                  Save video to favorites
                              </button>
-                            </div>
+                        </div>
 
-                          <div className='reloadVideoButton'>
-                              <button className='videobutton' onClick={this.handleClick}>
-                                 Select a new Randomized song!  
+                        <div className='reloadVideoButton'>
+                            <button className='videobutton' onClick={this.handleClick}>
+                                Select a new Randomized song!
                              </button>
-                         </div>
+                        </div>
 
+                    </div>
                 </div>
-            </div>
-           
+
             </>
-            
+
         )
     }
 }
