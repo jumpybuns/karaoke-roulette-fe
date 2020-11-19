@@ -3,6 +3,12 @@
 } */
 
 .signup {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   height: 1000px;
   background-image: url("./karmic2.jpg");
   background-repeat: no-repeat;
@@ -11,6 +17,93 @@
   background-size: cover;
   min-height: 100%;
   font-family: 'Staatliches', cursive;
+  
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 1000px;
+  background-image: url("./karmic2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+  font-family: 'Staatliches', cursive;
+  
+}
+
+.loginemail, .loginpass, .loginbutton, .login, .loginform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+.loginbutton {
+  font-family: 'Staatliches', cursive;
+  font-size: 12px;
+  padding: 3px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+ 
+  text-align: center; 
+  margin: auto;
+  
+ 
+  border-radius: 3px;
+  border: white;
+  border-style: hidden;
+  box-shadow: 0px 0px 14px #a9c3f7;
+}
+
+.email, .pass, input, .signupbutton, .submitform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+input {
+  font-family: 'Staatliches', cursive;
+  margin-bottom: 15px;
+  
+  border-radius: 3px;
+  border: white;
+  border-style: hidden;
+  box-shadow: 0px 0px 14px #a9c3f7;
+  width: 250px;
+  height: 20px;
+}
+
+
+.signupbutton {
+  font-family: 'Staatliches', cursive;
+  font-size: 12px;
+  padding: 3px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 14px;
+ 
+  text-align: center; 
+  margin: auto;
+  
+ 
+  border-radius: 3px;
+  border: white;
+  border-style: hidden;
+  box-shadow: 0px 0px 14px #a9c3f7;
 }
 
 .login {
@@ -40,6 +133,8 @@
   font-size: 30px;
   font-weight: thin; 
 }
+
+
 
 .topofhome {
 font-family: 'Staatliches', cursive;
@@ -184,7 +279,7 @@ margin-top:60px;
   font-family: 'Staatliches', cursive;
   font-size: 16px;
   background-color: rgb(125, 173, 245);
-  box-shadow: 5 5 5 #e479e7;
+  
 }
 
 .favorites {
@@ -220,48 +315,54 @@ margin-top:60px;
   text-align: center;
   font-size: 30px;
   font-weight: thin; 
-
-
-
-
 }
 
 .about-title {
-  font-size: 25px;
+  font-size: 36px;
+  text-shadow: 0px 0px 0px rgb(120, 152, 215);
+  margin-bottom: 25px;
+  font-weight: 50;
 }
 
-
 .bio {
-  font-size: 14px;
- 
+  font-size: 13px;
+ font-weight: thin;
   color: white;
   display: flex;
   flex: wrap;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 30px;
-  line-height: .1px;
+  margin: 50px;
+  line-height: 140%;
 }
 
-.sarahimg{
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  vertical-align: center;
+
+}
+.twitterlogo {
+  margin-left: 10px;
+}
+.linkedinlogo {
+  margin-right: 10px;
+}
+
+h3 {
+  position: relative;
+  margin-bottom: 0;
+  padding: 0;
+  font-weight: 50;
+}
+
+.profileimg{
 display: flex;
-height: 80px;
-}
-
-.rhoneimg {
-  display: flex;
-  height: 80px;
-}
-
-.rayimg {
-  display: flex;
-  height: 80px;
-}
-
-.ethanimg {
-  display: flex;
-  height: 80px;
+height: 120px;
+box-shadow: 0px 0px 35px rgba(148, 148, 149, 0.839);
 }
 
 .App-logo {
@@ -276,7 +377,7 @@ height: 80px;
 }
 
 h2 {
-  color:purple;
+  color:rgb(255, 255, 255);
 }
 
 .log {

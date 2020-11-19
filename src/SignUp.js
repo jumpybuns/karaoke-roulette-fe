@@ -31,26 +31,24 @@ export default class SignUp extends Component {
     render() {
         return (
             <div className='signup'>
-                <h2>Sign Up</h2>
-                <form onSubmit={this.handleSubmit}>
+                <h2>Please sign up below.</h2>
+                <form className='submitform' onSubmit={this.handleSubmit}>
                     <label className="email">
-                        Email:
-                        <input
+                       
+                        <input placeholder='Enter email Here'
                             onChange={(e) => this.setState({ email: e.target.value })}
                             value={this.state.email} />
                     </label>
                     <label className="pass">
-                        Password:
-                        <input
+                       
+                        <input placeholder='Enter Password Here'
                             onChange={(e) => this.setState({ password: e.target.value })}
                             value={this.state.password} type="password" />
                     </label>
                     {
                         this.state.loading
                             ? 'loading...'
-                            : <button>
-                                Sign Up!
-                        </button>
+                            : <button className='signupbutton'> Submit</button>
 
                     }
 
