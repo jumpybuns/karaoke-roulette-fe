@@ -437,90 +437,16 @@ h2 {
     transform: rotate(360deg);
   }
 }
-
-
-/* .glow {
-border:none
-} */
-
 .glow {
-  background-size: cover;
-  float: left;
-  margin: 4px;
-  box-shadow: 0 2px 4px #000;
-  position: relative;
-  transform: scale(0.9);
-  transition: .1s;
+  border: 4px dashed rgb(90, 14, 151);
+  animation: glow .4s infinite alternate;
 }
 
-.glow:hover {
-  transform: scale(1);
-  box-shadow: 0 2px 4px #000, 1 8px 32px rgba(114, 29, 163, 0.5);
-}
-
-.glow:hover:before,
-.glow:hover:after {
-  position: absolute;
-  content: "";
-  background: linear-gradient(90deg, rgb(88, 18, 145) 40%, transparent 40%);
-  top: 5px;
-  bottom: 5px;
-  left: 5px;
-  right: 5px;
-  z-index: 1;
-  border-radius: 4px;
-  background-size: 200% 4px;
-  background-repeat: no-repeat;
-  filter: drop-shadow(0 0 8px #fff);
-  background-position: 80% 0;
-}
-
-.glow:hover:before {
-  animation: beforeLineAnim 2s linear infinite;
-}
-
-.glow:hover:after {
-  animation: afterLineAnim 2s linear infinite;
-  transform: rotate(-90deg);
-  background-position: -20% 0;
-}
-
-@keyframes beforeLineAnim {
-  45%,
-  50% {
-    background-position: -100% 0;
+@keyframes glow {
+  from {
+    box-shadow: 0 0 40px -10px rgb(90, 14, 151);
   }
-  45% {
-    transform: scale(1)
-  }
-  50%,
-  95% {
-    transform: scale(1, -1)
-  }
-  95% {
-    background-position: 80% 0
-  }
-}
-
-@keyframes afterLineAnim {
-  20%,
-  25% {
-    background-position: -100% 0;
-  }
-  20% {
-    transform: scale(1) rotate(-90deg)
-  }
-  25% {
-    transform: scale(-1, 1) rotate(-90deg)
-  }
-  70%,
-  75% {
-    background-position: 80% 0;
-  }
-  70% {
-    transform: scale(-1, 1) rotate(-90deg)
-  }
-  75% {
-    transform: scale(1, 1) rotate(-90deg)
+  to {
+    box-shadow: 0 0 40px 20px rgb(90, 14, 151);
   }
 }
