@@ -12,9 +12,9 @@ export default class Header extends Component {
 
                     <li><NavLink to='/home' activeStyle={{ display: 'none' }}>Home</NavLink> </li>
 
-                    <li><NavLink to='/videos' activeStyle={{ display: 'none' }}>Karaoke Room</NavLink> </li>
+                    <li><NavLink to='/videos' activeStyle={{ display: 'none' }}>☆Enter the Karaoke Room!☆</NavLink> </li>
 
-                    <li><NavLink to='/favorites' activeStyle={{ display: 'none' }}>Favorites</NavLink> </li>
+                    <li><NavLink to='/favorites' activeStyle={{ display: 'none' }}>Favorite Songs</NavLink> </li>
 
                     <li><NavLink to='/aboutus' activeStyle={{ display: 'none' }}> About Us </NavLink> </li>
 
