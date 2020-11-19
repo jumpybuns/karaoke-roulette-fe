@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  Link,
+  // Link,
 } from "react-router-dom";
 import './App.css';
 import Login from './Login.js';
@@ -12,7 +12,7 @@ import Home from './Home.js';
 import PrivateRoute from './PrivateRoute.js';
 
 import VideoPage from './VideoPage.js';
-
+import Details from './Details.js';
 import AboutUs from './AboutUs.js';
 import Favorites from './Favorites.js';
 import Header from './Header';
@@ -120,6 +120,19 @@ export default class App extends Component {
               path='/aboutus'
               render={(routerProps) =>
                 <AboutUs
+                  {...routerProps}
+                  changeTokenAndUsername={this.changeTokenAndUsername}
+                  token={this.state.token}
+
+                />
+              }
+            />
+            <PrivateRoute
+              token={this.state.token}
+              exact
+              path='/details/:favorites'
+              render={(routerProps) =>
+                <Details
                   {...routerProps}
                   changeTokenAndUsername={this.changeTokenAndUsername}
                   token={this.state.token}

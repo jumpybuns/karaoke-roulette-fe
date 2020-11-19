@@ -3,13 +3,11 @@ import React, { Component } from 'react'
 export default class ErrorMessage extends Component {
 
     state = {
-        email: '',
-        password: '',
-        loading: false,
+
         error: null
     }
     try {
-    this.setState({ loading: true, error: null })
+    this.setState({ error: null })
 }
 //to copy pasta to login and signup
 catch (e) {
