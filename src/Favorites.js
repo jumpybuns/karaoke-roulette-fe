@@ -31,18 +31,22 @@ export default class Favorites extends Component {
     render() {
         console.log(this.state.favoriteId,)
         return (
-            <div>
-                Favorites!!
+            <div className='favorites'>
+                <div className='favoritesdiv'>
+               Favorite Song List
+                </div>
+                
                 <ul>
                     {
                         !!this.state.favorites.length && this.state.favorites.map(fave =>
-                            <li>
-                                <button className="trash" imagevalue={fave.id} onClick={() => this.handleDelete(fave.id)}> <img src={trash} alt="trash" width='15' /></button>
-                                <div>{fave.videoId}</div>
-                                <Link to={`/details/${fave.favorite}`}>
-                                    <p>{fave.title}</p></Link>
-                                <div>{fave.thumbnails}</div>
+                            <li className='favoriteslist'>
+                                   <div>IMAGE OF VIDEO HERE: --- NEEDS TO BE FIXED OR DELETED --- {fave.thumbnails}</div>
+                                <Link className='favoriteslinkitem' to={`/details/${fave.favorite}`}>
+                                <div>{fave.videoId}</div>                                
+                                    <p>{fave.title}</p></Link>                             
                                 <div>{fave.userId}</div>
+                                <button className="trash" imagevalue={fave.id} onClick={() => this.handleDelete(fave.id)}> <img className='trashicon' src={trash} alt="trash" width='15' /> Delete this video from favorites list.</button>
+
                             </li>
                         )
                     }

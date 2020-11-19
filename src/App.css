@@ -188,8 +188,6 @@ input {
   font-weight: thin; 
 }
 
-
-
 .topofhome {
 font-family: 'Staatliches', cursive;
 font-size: 13px;
@@ -226,8 +224,72 @@ padding: 30px;
 }
 
 
+.favorites {
+  height: 1000px;
+  background-image: url("./dark-brick.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+  font-family: 'Staatliches', cursive;
 
+  font-weight: 50;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px;
+  font-weight: thin; 
+  
+}
 
+.favoritesdiv {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  align-items: center;
+  margin: 0px;
+}
+
+.favoriteslinkitem {
+  font-size: 16px;
+  color:white;
+}
+
+.favoriteslist {
+  font-size: 14px;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-right: 50px;
+}
+
+.trash {
+  font-family: 'Staatliches', cursive;
+  font-size: 12px;
+  border: none;
+  border-radius: 2px;
+  background-color: rgb(179, 164, 194);  
+  margin-top:15px;
+  align-self: center;
+  align-items: center;
+  vertical-align: auto;
+}
+
+.trash:hover {
+  font-family: 'Staatliches', cursive;
+  font-size: 12px;
+  background-color: rgb(125, 173, 245);
+}
+
+.trashicon {
+  align-content: center;
+ vertical-align: center;
+}
 
 .video-page {
   height: 1000px;
@@ -303,7 +365,7 @@ margin-top:60px;
   
 }
 
-.favorites {
+/* .favorites {
   height: 1000px;
   background-image: url("./dark-brick.jpg");
   background-repeat: no-repeat;
@@ -318,7 +380,9 @@ margin-top:60px;
   text-align: center;
   font-size: 30px;
   font-weight: thin; 
-}
+} */
+
+
 
 .aboutus {
   
