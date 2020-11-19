@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 // import request from 'superagent';
 import { signUp } from './utils';
+import { Link } from 'react-router-dom';
 
 
 export default class SignUp extends Component {
@@ -51,7 +52,9 @@ export default class SignUp extends Component {
                             : <button className='signupbutton'> Submit</button>
 
                     }
-
+                    <div className='linkdiv'>
+                    <Link to='login'>Click here to navigate to Login Page</Link>
+                    </div>
                 </form>
             </div>
         )

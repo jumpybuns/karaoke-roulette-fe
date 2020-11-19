@@ -39,8 +39,8 @@ export default class App extends Component {
   }
 
   logOut = () => {
-    localStorage.setItem('TOKEN', '');
-    localStorage.setItem('USERNAME', '');
+    localStorage.removeItem('TOKEN');
+    localStorage.removeItem('USERNAME');
 
     this.setState({
       username: '',
