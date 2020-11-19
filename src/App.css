@@ -437,3 +437,16 @@ h2 {
     transform: rotate(360deg);
   }
 }
+.glow {
+  border: 4px dashed rgb(90, 14, 151);
+  animation: glow .4s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 40px -10px rgb(90, 14, 151);
+  }
+  to {
+    box-shadow: 0 0 40px 20px rgb(90, 14, 151);
+  }
+}

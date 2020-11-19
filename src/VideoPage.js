@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import request from 'superagent';
 import { addFavoriteVideo, getRandomVideo } from './utils';
 
-
+import './App.css';
 
 
 
@@ -63,9 +63,9 @@ export default class VideoPage extends Component {
                         <form>
                             <label>
 
-                                <div>
+                                <div >
 
-                                    <iframe title="youTubeVideo" id="player" type="text/html" width="640" height="390"
+                                    <iframe className="glow" title="youTubeVideo" id="player" type="text/html" width="640" height="390"
                                         src={`http://www.youtube.com/embed/${this.state.videos.videoId}?enablejsapi=1&origin=http://example.com`}
                                         frameBorder="0"></iframe>
                                 </div>
