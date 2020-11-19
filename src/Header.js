@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 
+
+
+
 export default class Header extends Component {
     render() {
         return (
@@ -14,6 +17,8 @@ export default class Header extends Component {
                     <li><NavLink  to='/favorites'  activeStyle={{display: 'none'}}>Favorites</NavLink> </li>
 
                     <li><NavLink  to='/aboutus'  activeStyle={{display: 'none'}}> About Us </NavLink> </li>
+
+                    <li><NavLink  to='/signup' onClick = {this.props.logout}>Log Out </NavLink> </li>
 
 
                 </ul>          

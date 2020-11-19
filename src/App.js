@@ -59,7 +59,7 @@ export default class App extends Component {
                 : <>
                   <Link to="/login"><div className="log">Log in</div></Link>
                   <Link to="/signup"><div className="sign">Sign up</div></Link>
-                  <Link to="/aboutus"><div className="about">About Us</div></Link>
+                  
 
                 </>}
           </ul>
