@@ -58,7 +58,7 @@ export default class Login extends Component {
                         </button>
                     }
                     <div className='linkdiv'>
-                    <Link to='login'>Click here to navigate to Login Page</Link>
+                    <Link className='loginlink' to='/'>Click here to navigate to Sign Up Page</Link>
                     </div>
                 </form>
             </div>

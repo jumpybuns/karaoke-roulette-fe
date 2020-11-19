@@ -59,7 +59,7 @@ export default class SignUp extends Component {
 
                     }
                     <div className='linkdiv'>
-                    <Link to='login'>Click here to navigate to Login Page</Link>
+                    <Link className='loginlink' to='login'>Click here to navigate to Login Page</Link>
                     </div>
                 </form>
             </div>
