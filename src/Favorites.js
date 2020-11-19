@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 // import request from 'superagent';
-import { fetchAllFavorites } from './utils';
+import { fetchAllFavorites, deleteFavorites } from './utils';
 
 
 
@@ -17,6 +17,12 @@ export default class Favorites extends Component {
         this.setState({ favorites: response.body });
 
     }
+    handleDelete = async (e) => {
+        e.preventDefault();
+        await deleteFavorites(this.state.favorites.id, this.props.token );
+
+        this.props.history.push('api/favorites');
+      }
     render() {
 
         return (
