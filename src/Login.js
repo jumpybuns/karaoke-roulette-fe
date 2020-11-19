@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 // import request from 'superagent';
 import { login } from './utils';
+import { Link } from 'react-router-dom';
 
 export default class Login extends Component {
 
@@ -56,6 +57,9 @@ export default class Login extends Component {
                                 Submit
                         </button>
                     }
+                    <div className='linkdiv'>
+                    <Link to='login'>Click here to navigate to Login Page</Link>
+                    </div>
                 </form>
             </div>
         )

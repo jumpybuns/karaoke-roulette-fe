@@ -65,6 +65,13 @@
   box-shadow: 0px 0px 14px #a9c3f7;
 }
 
+.linkdiv {
+  margin-top: 25px;
+  font-size: 11px;
+  color: white;
+  
+}
+
 .email, .pass, input, .signupbutton, .submitform {
   display: flex;
   flex-direction: column;

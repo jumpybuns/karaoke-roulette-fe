@@ -6,6 +6,7 @@ import Ray from './ray.jpg';
 import Ethan from './ethan.jpg';
 import Linkedin from './linkedinlogo.png';
 import Twitter from './twitterlogo.png';
+// import Header from './Header.png'
 
 
 
