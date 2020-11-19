@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 // import request from 'superagent';
-import { fetchAllFavorites } from './utils';
+import { fetchAllFavorites, deleteFavorites } from './utils';
 
 
 
 export default class Favorites extends Component {
     state = {
         favorites: [],
+        favoriteId: 0,
 
     }
 
@@ -14,11 +15,19 @@ export default class Favorites extends Component {
     componentDidMount = async () => {
         const response = await fetchAllFavorites(this.props.token)
 
-        this.setState({ favorites: response.body });
+      await this.setState({ favorites: response.body });
 
     }
-    render() {
+    handleDelete = async (someId) => {
+        // e.preventDefault();
+        await deleteFavorites(someId, this.props.token );
 
+        const response = await fetchAllFavorites(this.props.token)
+         await this.setState({ favorites: response.body });
+      }
+      
+    render() {
+console.log(this.state.favoriteId,)
         return (
             <div>
                 Favorites!!
@@ -26,15 +35,16 @@ export default class Favorites extends Component {
                     {
                         !!this.state.favorites.length && this.state.favorites.map(fave =>
                             <li>
-                                <div>{fave.id}</div>
+                                <button value={fave.id} onClick = {() =>this.handleDelete(fave.id)}>delete favorite</button>
                                 <div>{fave.videoId}</div>
-                                <div>{fave.title}</div>
+                                <p>{fave.title}</p>
                                 <div>{fave.thumbnails}</div>
                                 <div>{fave.userId}</div>
                             </li>
                         )
                     }
                 </ul>
+                {/* <button onClick={this.handleDelete}>Delete</button> */}
             </div>
         )
     }

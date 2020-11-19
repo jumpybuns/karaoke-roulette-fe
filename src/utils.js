@@ -4,12 +4,13 @@ import request from 'superagent';
 
 
 const herokuBackend = 'https://rocky-dawn-10139.herokuapp.com/'
-// const localBackend = 'http://localhost:4000/';
+const localBackend = 'http://localhost:4000/';
 
 
-export async function fetchFavorite(someId) {
+export async function fetchFavorite(someId, payload ) {
     try{
-        return await request.get(`${herokuBackend}api/favorites/${someId}`);
+        return await request.get(`${herokuBackend}api/favorites/${someId}`)
+        .set('Authorization', payload)
     } catch(e) {
         throw e;
     }
@@ -23,11 +24,10 @@ export async function fetchAllFavorites(payload) {
     }
 }
 
-export async function deleteFavorites(someId) {
+export async function deleteFavorites(someId, token) {
     try {
-        await request.delete(`${herokuBackend}api/favorites/${someId}`);
-        
-        return;
+        return await request.delete(`${herokuBackend}api/favorites/${someId}`)
+        .set('Authorization', token)
     } catch(err) {
         throw err;
     }
@@ -71,7 +71,6 @@ export async function getRandomVideo(payload) {
 }
 export async function addFavoriteVideo(token, payload) {
     try {
-  
         return await request.post(`${herokuBackend}api/favorites`)
         .set('Authorization', token)
         .send(payload)
