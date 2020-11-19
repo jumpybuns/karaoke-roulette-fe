@@ -52,7 +52,7 @@ export default class App extends Component {
     return (
       <div>
         <Router>
-          <ul>
+          
             {
               this.state.token
                 ? <Header />
@@ -62,7 +62,7 @@ export default class App extends Component {
 
 
                 </>}
-          </ul>
+          
           <Switch>
             <Route exact path='/login' render={(routerProps) =>
               <Login
