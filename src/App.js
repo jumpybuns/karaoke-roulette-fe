@@ -57,9 +57,9 @@ export default class App extends Component {
               this.state.token
                 ? <Header />
                 : <>
-                  <Link to="/login"><div className="log">Log in</div></Link>
-                  <Link to="/signup"><div className="sign">Sign up</div></Link>
-                  
+                  {/* <Link to="/login" ><div className="log">Log in</div></Link>
+                  <Link to="/signup" ><div className="sign">Sign up</div></Link> */}
+
 
                 </>}
           </ul>
@@ -74,7 +74,7 @@ export default class App extends Component {
 
             <Route
               exact
-              path='/signup'
+              path='/'
               render={(routerProps) =>
                 <SignUp
                   {...routerProps}
@@ -122,7 +122,7 @@ export default class App extends Component {
                 <AboutUs
                   {...routerProps}
                   changeTokenAndUsername={this.changeTokenAndUsername}
-                  token={this.state.token} 
+                  token={this.state.token}
 
                 />
               }
