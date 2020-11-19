@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 // import request from 'superagent';
 import { fetchAllFavorites, deleteFavorites } from './utils';
+import trash from './delete.png';
+import { Link } from 'react-router-dom';
 
 
 
@@ -15,19 +17,19 @@ export default class Favorites extends Component {
     componentDidMount = async () => {
         const response = await fetchAllFavorites(this.props.token)
 
-      await this.setState({ favorites: response.body });
+        await this.setState({ favorites: response.body });
 
     }
     handleDelete = async (someId) => {
         // e.preventDefault();
-        await deleteFavorites(someId, this.props.token );
+        await deleteFavorites(someId, this.props.token);
 
         const response = await fetchAllFavorites(this.props.token)
-         await this.setState({ favorites: response.body });
-      }
-      
+        await this.setState({ favorites: response.body });
+    }
+
     render() {
-console.log(this.state.favoriteId,)
+        console.log(this.state.favoriteId,)
         return (
             <div>
                 Favorites!!
@@ -35,9 +37,10 @@ console.log(this.state.favoriteId,)
                     {
                         !!this.state.favorites.length && this.state.favorites.map(fave =>
                             <li>
-                                <button value={fave.id} onClick = {() =>this.handleDelete(fave.id)}>delete favorite</button>
+                                <button className="trash" imagevalue={fave.id} onClick={() => this.handleDelete(fave.id)}> <img src={trash} alt="trash" width='15' /></button>
                                 <div>{fave.videoId}</div>
-                                <p>{fave.title}</p>
+                                <Link to={`/details/${fave.favorite}`}>
+                                    <p>{fave.title}</p></Link>
                                 <div>{fave.thumbnails}</div>
                                 <div>{fave.userId}</div>
                             </li>
