@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import request from 'superagent';
+// import request from 'superagent';
 import { fetchAllFavorites } from './utils';
 
 
