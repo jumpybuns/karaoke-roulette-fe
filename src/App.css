@@ -65,6 +65,16 @@
   box-shadow: 0px 0px 14px #a9c3f7;
 }
 
+.linkdiv {
+  margin-top: 30px;
+}
+.loginlink {
+  
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.653);
+  
+}
+
 .email, .pass, input, .signupbutton, .submitform {
   display: flex;
   flex-direction: column;
