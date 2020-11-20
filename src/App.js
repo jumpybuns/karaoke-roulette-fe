@@ -52,17 +52,17 @@ export default class App extends Component {
     return (
       <div>
         <Router>
-          
-            {
-              this.state.token
-                ? <Header />
-                : <>
-                  {/* <Link to="/login" ><div className="log">Log in</div></Link>
+
+          {
+            this.state.token
+              ? <Header />
+              : <>
+                {/* <Link to="/login" ><div className="log">Log in</div></Link>
                   <Link to="/signup" ><div className="sign">Sign up</div></Link> */}
 
 
-                </>}
-          
+              </>}
+
           <Switch>
             <Route exact path='/login' render={(routerProps) =>
               <Login
