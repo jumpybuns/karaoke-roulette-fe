@@ -375,12 +375,17 @@ flex-direction: column;
 justify-content: center;
 }
 
-iframe {
-margin-top:60px;
+.resp-container {
+  display: flex;
+  size: relative;
+  position: center;  
+}
 
+iframe, .glow {
+margin-top:60px;
 display: flex;
-width: wrap;
-height: wrap;
+width: 25em;
+height: 17em;
 }
 
 .favoritevideobuttondiv {

@@ -44,11 +44,13 @@ export default class VideoPage extends Component {
                     <div>
                         <form>
                             <label>
-                                <div >
-                                        <iframe className="glow" title="youTubeVideo" id="player" type="text/html" width="640" height="390"
+                                
+                                    <div class="resp-container">
+                                        <iframe className="glow" title="youTubeVideo" id="player" type="text/html" width="200%" height="200%"
                                         src={`https://www.youtube.com/embed/${this.state.videos.videoId}?enablejsapi=1&origin=http://example.com`}
                                         frameBorder="0"></iframe>
-                                </div>
+                                    </div>
+                                
                             </label>
                                 <div className='favoritevideobuttondiv'>
                                         <button onClick={this.handleFavorite} className='favoritevideobutton'>
