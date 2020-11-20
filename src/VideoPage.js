@@ -78,7 +78,6 @@ export default class VideoPage extends Component {
 
 
 
-
                         </form>
 
 
@@ -87,7 +86,8 @@ export default class VideoPage extends Component {
                                 Select a new Randomized song!
                              </button>
                         </div>
-
+                        <div className="spotlight spot1"></div>
+                        <div className="spotlight spot2"></div>
                     </div>
                 </div>
             </>
