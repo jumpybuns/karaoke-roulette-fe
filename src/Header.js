@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import './App.css';
 
-
-
-
 export default class Header extends Component {
     render() {
         return (
@@ -22,9 +19,7 @@ export default class Header extends Component {
 
                     <li><NavLink to='/login' onClick={this.props.logout}>Log Out </NavLink> </li>
 
-
                 </ul>
-
             </div>
             </>
         )

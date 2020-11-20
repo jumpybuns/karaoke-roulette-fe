@@ -15,15 +15,10 @@ import AboutUs from './AboutUs.js';
 import Favorites from './Favorites.js';
 import Header from './Header';
 
-
-
-// import Favorites from './Favorites'
-
 export default class App extends Component {
   state = {
     username: localStorage.getItem('USERNAME') || '',
     token: localStorage.getItem('TOKEN') || '',
-
   }
 
   changeTokenAndUsername = (userName, token) => {
@@ -108,6 +103,7 @@ export default class App extends Component {
                 />
               }
             />
+            
             <PrivateRoute
               token={this.state.token}
               exact
