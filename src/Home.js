@@ -16,7 +16,7 @@ export default class Home extends Component {
     // }
     fetchName = async () => {
         const response = await randomName(this.props.token)
-        
+
         await this.setState({ name: response.body.name, lastName: response.body.last_name });
         console.log(response.body)
     }
@@ -48,7 +48,13 @@ export default class Home extends Component {
                 <div className='home-instructions'>
                     INSTRUCTIONS HERE
                     </div>
+                <body className="body">
 
+
+                    <div className="spot1"></div>
+                    <div className="spot2"></div>
+                    <div className="spotlight"></div>
+                </body>
 
             </div>
 

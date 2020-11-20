@@ -53,6 +53,8 @@ export default class SignUp extends Component {
                             onChange={(e) => this.setState({ password: e.target.value })}
                             value={this.state.password} type="password" />
                     </label>
+                    <div className="spotlight spot1"></div>
+                    <div className="spotlight spot2"></div>
                     {
                         this.state.loading
                             ? 'loading...'
@@ -60,10 +62,10 @@ export default class SignUp extends Component {
 
                     }
                     <div className='linkdiv'>
-                    <Link className='loginlink' to='login'>Click here to navigate to Login Page</Link>
+                        <Link className='loginlink' to='login'>Click here to navigate to Login Page</Link>
                     </div>
                     <div className='karaokeicondiv'>
-                        <img className='karaokeicon' alt="karaokeicon" src={karaokeicon}  height="300px"></img>
+                        <img className='karaokeicon' alt="karaokeicon" src={karaokeicon} height="300px"></img>
                     </div>
                 </form>
             </div>
