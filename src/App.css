@@ -1,7 +1,7 @@
 
 
   ul.headerul {
-    padding: 20px;
+    padding: 0px;
     margin: 0;
     background-color: grey;
     background-size: 100% 100%;
@@ -76,7 +76,11 @@
   a {
     color: black;
     font-family: 'Staatliches', cursive;
-    text-decoration: none;    
+    text-decoration: none;  
+
+    position: relative; 
+    font-size : 100%;
+      
     }
     
     a:hover {
@@ -373,6 +377,10 @@ justify-content: center;
 
 iframe {
 margin-top:60px;
+
+display: flex;
+width: wrap;
+height: wrap;
 }
 
 .favoritevideobuttondiv {
@@ -397,7 +405,7 @@ margin-top:60px;
   border: none;
   border-radius: 2px;
   background-color: rgb(125, 173, 245);  
-  margin-top:20px;
+  margin-top:45px;
   align-self: center;
 }
 
