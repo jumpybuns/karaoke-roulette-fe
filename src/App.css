@@ -46,6 +46,31 @@
       color: rgb(125, 173, 245);
     }
 
+.karaokeicondiv {
+  padding-top: 50px;
+}
+
+/* img.karaokeicon {
+  background: 4px rgb(90, 14, 151);
+  animation: glow .7s infinite alternate;
+  background-position: relative;
+} */
+/* svg .karaokeicon { 
+  cursor:crosshair; 
+  -moz-box-shadow: -5px -5px 5px #888;
+  -webkit-box-shadow: -5px -5px 5px #888;
+  box-shadow: -5px -5px 5px #888; 
+}	 */
+/* .karaokeicon {
+  from {
+    background-color: rgb(90, 14, 151);
+  }
+  to {
+    background-color: rgb(90, 14, 151);
+  }
+} */
+
+
 .signup {
 
   display: flex;
@@ -54,7 +79,7 @@
   align-content: center;
   align-items: center;
   height: 1000px;
-  background-image: url("./karmic2.jpg");
+  background-image: url("./dark-brick.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -65,13 +90,14 @@
 }
 
 .login {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
   height: 1000px;
-  background-image: url("./karmic2.jpg");
+  background-image: url("./dark-brick.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -98,7 +124,7 @@
   display: flex;
   flex-direction: column;
   padding-left: 15px;
- 
+  background-color: rgb(179, 164, 194);
   text-align: center; 
   margin: auto;
   
@@ -109,13 +135,34 @@
   box-shadow: 0px 0px 14px #a9c3f7;
 }
 
+.loginbutton:hover {
+  font-family: 'Staatliches', cursive;
+  font-size: 12px;
+  padding: 3px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  background-color: rgb(125, 173, 245);
+  text-align: center; 
+  margin: auto;
+  
+ 
+  border-radius: 3px;
+  border: white;
+  border-style: hidden;
+  box-shadow: 0px 0px 14px #a9c3f7;
+}
+
+
+
 .linkdiv {
   margin-top: 30px;
 }
 .loginlink {
   
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.653);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.438);
   
 }
 
@@ -129,6 +176,11 @@
 }
 
 input {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
   font-family: 'Staatliches', cursive;
   margin-bottom: 15px;
   
@@ -136,7 +188,7 @@ input {
   border: white;
   border-style: hidden;
   box-shadow: 0px 0px 14px #a9c3f7;
-  width: 250px;
+  width: 200px;
   height: 20px;
 }
 
@@ -149,7 +201,26 @@ input {
   display: flex;
   flex-direction: column;
   padding-left: 14px;
+  background-color: rgb(179, 164, 194);
+  text-align: center; 
+  margin: auto;
+  
  
+  border-radius: 3px;
+  border: white;
+  ;
+  border-style: hidden;
+  box-shadow: 0px 0px 14px #a9c3f7;
+}
+.signupbutton:hover {
+  font-family: 'Staatliches', cursive;
+  font-size: 12px;
+  padding: 3px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 14px;
+  background-color: rgb(125, 173, 245);
   text-align: center; 
   margin: auto;
   
@@ -160,16 +231,6 @@ input {
   box-shadow: 0px 0px 14px #a9c3f7;
 }
 
-.login {
-  height: 1000px;
-  background-image: url("./karmic2.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  min-height: 100%;
-  font-family: 'Staatliches', cursive;
-}
 
 .home {
   height: 1000px;
@@ -463,6 +524,7 @@ box-shadow: 0px 0px 35px rgba(148, 148, 149, 0.839);
 
 h2 {
   color:rgb(255, 255, 255);
+  padding-top: 30px;
 }
 
 .log {
