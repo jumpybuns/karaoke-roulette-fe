@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 // import request from 'superagent';
 import { signUp } from './utils';
 import { Link } from 'react-router-dom';
+import karaokeicon from './newkaraokeicon.png'
 
 
 export default class SignUp extends Component {
@@ -60,6 +61,9 @@ export default class SignUp extends Component {
                     }
                     <div className='linkdiv'>
                     <Link className='loginlink' to='login'>Click here to navigate to Login Page</Link>
+                    </div>
+                    <div className='karaokeicondiv'>
+                        <img className='karaokeicon' alt="karaokeicon" src={karaokeicon}  height="300px"></img>
                     </div>
                 </form>
             </div>
