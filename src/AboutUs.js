@@ -33,6 +33,8 @@ export default class AboutUs extends Component {
                         <a href="https://twitter.com/@SarahSkillen3">
                             <img className='twitterlogo' alt="twitterlogo" src={Twitter} height="25px" width="25px" />
                         </a>
+                        <a href="https://github.com/sarah-svg">GitHub
+                        {/* <img className='githublogo' alt="githublogo" src={Github} height="25px" width='25px' /></a> */}
                     </span>
                 </div>
 
@@ -48,6 +50,9 @@ export default class AboutUs extends Component {
                         </a>
                         <a href="https://twitter.com/rhone_zone/">
                             <img className='twitterlogo' alt="twitterlogo" src={Twitter} height="25px" width="25px" />
+                        </a>
+                        <a href="https://github.com/RhoneLachner">GitHub
+                        {/* <img className='githublogo' alt="githublogo" src={Github} height="25px" width='25px' /> */}
                         </a>
                     </span>
                 </div>
@@ -65,7 +70,11 @@ export default class AboutUs extends Component {
                         <a href="https://twitter.com/RSakultarawattn/">
                             <img className='twitterlogo' alt="twitterlogo" src={Twitter} height="25px" width="25px" />
                         </a>
+                        <a href="https://github.com/RSakultarawattn">Github
+                        {/* <img className='githublogo' alt="githublogo" src={Github} height="25px" width='25px' /> */}
+                        </a>
                     </span>
+
 
                 </div>
 
@@ -81,6 +90,9 @@ export default class AboutUs extends Component {
                         </a>
                         <a href="https://twitter.com/">
                             <img className='twitterlogo' alt="twitterlogo" src={Twitter} height="25px" width="25px" />
+                        </a>
+                        <a href="https://github.com/jumpybuns">GitHub
+                        {/* <img className='githublogo' alt="githublogo" src={Github} height="25px" width='25px' /> */}
                         </a>
                     </span>
                 </div>
