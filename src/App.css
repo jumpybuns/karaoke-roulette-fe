@@ -493,9 +493,14 @@ margin-top:60px;
 }
 .twitterlogo {
   margin-left: 10px;
+  margin-right: 10px;
 }
 .linkedinlogo {
   margin-right: 10px;
+  
+}
+.githublogo {
+  margin-left: 10px;
 }
 
 h3 {
