@@ -1,6 +1,8 @@
 # karaoke-roulette-fe
-Oregon Trail 2020
-A modern version of The Oregon Trail, 10-23-2020
+Karaoke Roulette! 
+A Karaoke Song Generator, and Socially Distanced Karaoke Club for Friends:
+
+
 By Rhone Lachner, Ray Sakultarawattn, Ethan Pierce, Sarah Skillen
 Description
 In Karaoke Roulette the player picks and name of there band and can then go to the video page and sing along to there
@@ -16,10 +18,15 @@ Questions or comments can be directed to Rhone Lachner, Ray Sakultarawattn, Etha
 
 Technologies Used
 
-JavaScript/React
+React/JavaScriptReact
+SQL
 CSS
 HTML
 Express
+Heroku 
+Netlify
+Photoshop
+YouTube Developer API
 
 
 License
