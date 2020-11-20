@@ -29,7 +29,7 @@ export default class Favorites extends Component {
                     {
                         !!this.state.favorites.length && this.state.favorites.map(fave =>
                             <li className='favoriteslist'>
-                                    <img src={fave.thumbnails} alt={fave.title} />
+                                    <img className='favoritesthumbnail' src={fave.thumbnails} alt={fave.title} />
                                 <div>{fave.videoId}</div>
                                     <p>{fave.title}</p>
                                 <div>{fave.userId}</div>

@@ -333,6 +333,10 @@ padding: 30px;
   padding-right: 50px;
 }
 
+.favoritesthumbnail {
+  box-shadow: 0px 0px 35px rgba(148, 148, 149, 0.516);
+}
+
 .trash {
   font-family: 'Staatliches', cursive;
   font-size: 12px;
