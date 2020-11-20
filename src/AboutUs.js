@@ -30,7 +30,7 @@ export default class AboutUs extends Component {
                         <a href="https://www.linkedin.com/in/sarah-skillen-7339b61b8/">
                             <img className='linkedinlogo' alt="linkedinlogo" src={Linkedin} height="25px" width='25px' />
                         </a>
-                        <a href="https://twitter.com/">
+                        <a href="https://twitter.com/@SarahSkillen3">
                             <img className='twitterlogo' alt="twitterlogo" src={Twitter} height="25px" width="25px" />
                         </a>
                     </span>
