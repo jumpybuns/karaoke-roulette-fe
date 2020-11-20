@@ -21,7 +21,6 @@ export default class Favorites extends Component {
 
     }
     handleDelete = async (someId) => {
-        // e.preventDefault();
         await deleteFavorites(someId, this.props.token);
 
         const response = await fetchAllFavorites(this.props.token)
@@ -40,10 +39,7 @@ export default class Favorites extends Component {
                     {
                         !!this.state.favorites.length && this.state.favorites.map(fave =>
                             <li className='favoriteslist'>
-                                <Link
-                                    className='favoriteslinkitem' to={`/details/${fave.favorite}`}>
-                                    <img src={fave.thumbnails} alt={fave.title} />
-                                </Link>
+                                <img src={fave.thumbnails} alt={fave.title} />
                                 <div>{fave.videoId}</div>
                                 <p>{fave.title}</p>
                                 <div>{fave.userId}</div>
@@ -53,7 +49,6 @@ export default class Favorites extends Component {
                         )
                     }
                 </ul>
-                {/* <button onClick={this.handleDelete}>Delete</button> */}
             </div>
         )
     }
