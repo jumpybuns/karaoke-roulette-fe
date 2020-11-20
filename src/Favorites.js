@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 // import request from 'superagent';
 import { fetchAllFavorites, deleteFavorites } from './utils';
 import trash from './delete.png';
-import { Link } from 'react-router-dom';
 
 
 
@@ -43,7 +42,7 @@ export default class Favorites extends Component {
                                 <div>{fave.videoId}</div>
                                 <p>{fave.title}</p>
                                 <div>{fave.userId}</div>
-                                <button className="trash" imagevalue={fave.id} onClick={() => this.handleDelete(fave.id)}> <img className='trashicon' src={trash} alt="trash" width='15' /> Delete this video from favorites list.</button>
+                                <button className="trash" imagevalue={fave.id} onClick={() => this.handleDelete(fave.id)}> <img className='trashicon' src={trash} alt="trash" width='15' /> Delete this video from favorites list</button>
 
                             </li>
                         )

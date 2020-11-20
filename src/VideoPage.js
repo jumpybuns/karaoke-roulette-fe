@@ -47,11 +47,6 @@ export default class VideoPage extends Component {
 
     render() {
 
-
-        // const randomIndex =  Math.floor(Math.random()*(this.state.videos.length-1))
-        // console.log(this.state.videos);
-
-
         return (
 
             <>
