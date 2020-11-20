@@ -44,7 +44,7 @@ export default class AboutUs extends Component {
 
                     <img className='profileimg' alt="Rhone" src={Rhone} height="150px" />
                     <h3 className='name'>Rhone Lachner</h3>
-                    <p>Hey person is a person and whooo boy, what a person <br /> Hey person is a person and whooo boy, what a person </p>
+                    <p>Rhone is a software engineer, nature enthusiast, and muscian living in Portland Oregon. <br/> Their karaoke go-to song is Time after Time by Cyndi Lauper.</p>
                     <span className='icons'>
                         <a href="https://www.linkedin.com/in/rhonelachner/">
                             <img className='linkedinlogo' alt="linkedinlogo" src={Linkedin} height="25px" width='25px' />
