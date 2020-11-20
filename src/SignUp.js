@@ -39,7 +39,7 @@ export default class SignUp extends Component {
     render() {
         return (
             <div className='signup'>
-                <h2>Please sign up below.</h2>
+                <h2>Please sign up below</h2>
                 <form className='submitform' onSubmit={this.handleSubmit}>
                     <label className="email">
                         {this.state.error && <div style={{ color: 'red' }}>{this.state.error}</div>}
@@ -60,10 +60,10 @@ export default class SignUp extends Component {
 
                     }
                     <div className='linkdiv'>
-                    <Link className='loginlink' to='login'>Click here to navigate to Login Page</Link>
+                        <Link className='loginlink' to='login'>Click here to navigate to Login Page</Link>
                     </div>
                     <div className='karaokeicondiv'>
-                        <img className='karaokeicon' alt="karaokeicon" src={karaokeicon}  height="300px"></img>
+                        <img className='karaokeicon' alt="karaokeicon" src={karaokeicon} height="300px"></img>
                     </div>
                 </form>
             </div>

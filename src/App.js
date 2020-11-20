@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  // Link,
 } from "react-router-dom";
 import './App.css';
 import Login from './Login.js';
@@ -12,7 +11,6 @@ import Home from './Home.js';
 import PrivateRoute from './PrivateRoute.js';
 
 import VideoPage from './VideoPage.js';
-import Details from './Details.js';
 import AboutUs from './AboutUs.js';
 import Favorites from './Favorites.js';
 import Header from './Header';
@@ -57,10 +55,6 @@ export default class App extends Component {
             this.state.token
               ? <Header />
               : <>
-                {/* <Link to="/login" ><div className="log">Log in</div></Link>
-                  <Link to="/signup" ><div className="sign">Sign up</div></Link> */}
-
-
               </>}
 
           <Switch>
@@ -127,19 +121,7 @@ export default class App extends Component {
                 />
               }
             />
-            <PrivateRoute
-              token={this.state.token}
-              exact
-              path='/details/:favorites'
-              render={(routerProps) =>
-                <Details
-                  {...routerProps}
-                  changeTokenAndUsername={this.changeTokenAndUsername}
-                  token={this.state.token}
 
-                />
-              }
-            />
           </Switch>
         </Router>
       </div>
