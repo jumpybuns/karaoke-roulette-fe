@@ -72,7 +72,7 @@ export default class AboutUs extends Component {
                         <a href="https://twitter.com/RSakultarawattn/">
                             <img className='twitterlogo' alt="twitterlogo" src={Twitter} height="25px" width="25px" />
                         </a>
-                        <a href="https://github.com/RSakultarawattn">Github
+                        <a href="https://github.com/RSakultarawattn">
                         <img className='githublogo' alt="githublogo" src={GitHub} height="25px" width='25px' />
                         </a>
                     </span>
@@ -93,7 +93,7 @@ export default class AboutUs extends Component {
                         <a href="https://twitter.com/">
                             <img className='twitterlogo' alt="twitterlogo" src={Twitter} height="25px" width="25px" />
                         </a>
-                        <a href="https://github.com/jumpybuns">GitHub
+                        <a href="https://github.com/jumpybuns">
                         <img className='githublogo' alt="githublogo" src={GitHub} height="25px" width='25px' />
                         </a>
                     </span>
