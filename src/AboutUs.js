@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-// import { Link } from 'react-router-dom'
+import React, { Component } from 'react';
 import Rhone from './rhoneimg.jpg';
 import Sarah from './sarah.jpg';
 import Ray from './ray.jpg';
@@ -7,7 +6,7 @@ import Ethan from './ethan.jpg';
 import Linkedin from './linkedinlogo.png';
 import Twitter from './twitterlogo.png';
 import GitHub from './githubicon.png'
-// import Header from './Header.png'
+
 
 
 
@@ -35,7 +34,7 @@ export default class AboutUs extends Component {
                             <img className='twitterlogo' alt="twitterlogo" src={Twitter} height="25px" width="25px" />
                         </a>
                         <a href="https://github.com/sarah-svg">
-                        <img className='githublogo' alt="githublogo" src={GitHub} height="25px" width='25px' />
+                        <img className='githublogo' alt="githublogo" src={GitHub} height="27px" width='27px' />
                         </a>
                     </span>
                 </div>
@@ -54,11 +53,10 @@ export default class AboutUs extends Component {
                             <img className='twitterlogo' alt="twitterlogo" src={Twitter} height="25px" width="25px" />
                         </a>
                         <a href="https://github.com/RhoneLachner">
-                        <img className='githublogo' alt="githublogo" src={GitHub} height="25px" width='25px' />
+                        <img className='githublogo' alt="githublogo" src={GitHub} height="27px" width='27px' />
                         </a>
                     </span>
                 </div>
-
 
                 <div className="bio">
 
@@ -73,16 +71,13 @@ export default class AboutUs extends Component {
                             <img className='twitterlogo' alt="twitterlogo" src={Twitter} height="25px" width="25px" />
                         </a>
                         <a href="https://github.com/RSakultarawattn">
-                        <img className='githublogo' alt="githublogo" src={GitHub} height="25px" width='25px' />
+                        <img className='githublogo' alt="githublogo" src={GitHub} height="27px" width='27px' />
                         </a>
                     </span>
 
-
                 </div>
 
-
                 <div className="bio">
-
                     <img className="profileimg" alt="Ethan" src={Ethan} height="150px" />
                     <h3 className='name'>Ethan Pierce</h3>
                     <p>Full stack software engineer recently transitioned from full time audio engineer. An aura of audiophile but code is where the heart is.</p>
@@ -90,16 +85,15 @@ export default class AboutUs extends Component {
                         <a href="https://www.linkedin.com/in/ethanpiercepresents/">
                             <img className='linkedinlogo' alt="linkedinlogo" src={Linkedin} height="25px" width='25px' />
                         </a>
-                        <a href="https://twitter.com/">
+                        <a href="https://twitter.com/EthanPierce82">
                             <img className='twitterlogo' alt="twitterlogo" src={Twitter} height="25px" width="25px" />
                         </a>
                         <a href="https://github.com/jumpybuns">
-                        <img className='githublogo' alt="githublogo" src={GitHub} height="25px" width='25px' />
+                        <img className='githublogo' alt="githublogo" src={GitHub} height="27px" width='27px' />
                         </a>
                     </span>
                 </div>
-
-
+                <div className='ethanaboutus'></div>
 
             </div>
         )

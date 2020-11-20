@@ -8,9 +8,7 @@
   }
 
 .headerdiv {
-
   background-color: black;
-
   }
 
   h1 {
@@ -25,8 +23,7 @@
   font-size: 1.4em;
   align-self: center;
   justify-content: center;
-  background-color: gray;  
-  
+  background-color: gray;    
   }
 
   .light { background-color: black; color: white;}
@@ -42,8 +39,7 @@
   border-right: 40px solid transparent;
   background-color: transparent;
   transform-origin: 50% 100% 0;
-  z-index: 0;
-  /* -webkit-transition-timing: ease-in-out; */
+  z-index: 0; 
   }
 
  @keyframes move {
@@ -70,7 +66,6 @@
   }
 }
 
-
   li {
     align-items: center;
     list-style-type: none;
@@ -81,8 +76,7 @@
   a {
     color: black;
     font-family: 'Staatliches', cursive;
-    text-decoration: none;
-    
+    text-decoration: none;    
     }
     
     a:hover {
@@ -93,29 +87,7 @@
   padding-top: 50px;
 }
 
-/* img.karaokeicon {
-  background: 4px rgb(90, 14, 151);
-  animation: glow .7s infinite alternate;
-  background-position: relative;
-} */
-/* svg .karaokeicon { 
-  cursor:crosshair; 
-  -moz-box-shadow: -5px -5px 5px #888;
-  -webkit-box-shadow: -5px -5px 5px #888;
-  box-shadow: -5px -5px 5px #888; 
-}	 */
-/* .karaokeicon {
-  from {
-    background-color: rgb(90, 14, 151);
-  }
-  to {
-    background-color: rgb(90, 14, 151);
-  }
-} */
-
-
 .signup {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,12 +100,10 @@
   background-position: center;
   background-size: cover;
   min-height: 100%;
-  font-family: 'Staatliches', cursive;
-  
+  font-family: 'Staatliches', cursive;  
 }
 
-.login {
-  
+.login {  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,8 +116,7 @@
   background-position: center;
   background-size: cover;
   min-height: 100%;
-  font-family: 'Staatliches', cursive;
-  
+  font-family: 'Staatliches', cursive;  
 }
 
 .loginemail, .loginpass, .loginbutton, .login, .loginform {
@@ -169,8 +138,7 @@
   padding-left: 15px;
   background-color: rgb(179, 164, 194);
   text-align: center; 
-  margin: auto;
-  
+  margin: auto;  
  
   border-radius: 3px;
   border: white;
@@ -188,8 +156,7 @@
   padding-left: 15px;
   background-color: rgb(125, 173, 245);
   text-align: center; 
-  margin: auto;
-  
+  margin: auto;  
  
   border-radius: 3px;
   border: white;
@@ -197,16 +164,12 @@
   box-shadow: 0px 0px 14px #a9c3f7;
 }
 
-
-
 .linkdiv {
   margin-top: 30px;
 }
-.loginlink {
-  
+.loginlink {  
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.438);
-  
+  color: rgba(255, 255, 255, 0.438);  
 }
 
 .email, .pass, input, .signupbutton, .submitform {
@@ -235,7 +198,6 @@ input {
   height: 20px;
 }
 
-
 .signupbutton {
   font-family: 'Staatliches', cursive;
   font-size: 12px;
@@ -246,8 +208,7 @@ input {
   padding-left: 14px;
   background-color: rgb(179, 164, 194);
   text-align: center; 
-  margin: auto;
-  
+  margin: auto;  
  
   border-radius: 3px;
   border: white;
@@ -255,6 +216,7 @@ input {
   border-style: hidden;
   box-shadow: 0px 0px 14px #a9c3f7;
 }
+
 .signupbutton:hover {
   font-family: 'Staatliches', cursive;
   font-size: 12px;
@@ -265,15 +227,13 @@ input {
   padding-left: 14px;
   background-color: rgb(125, 173, 245);
   text-align: center; 
-  margin: auto;
-  
+  margin: auto;  
  
   border-radius: 3px;
   border: white;
   border-style: hidden;
   box-shadow: 0px 0px 14px #a9c3f7;
 }
-
 
 .home {
   height: 1000px;
@@ -302,16 +262,15 @@ padding: 30px;
 .home-instructions {
   margin-top: 200px;
   font-size: 15px;
-
 }
 
 .namebutton {
   font-family: 'Staatliches', cursive;
   border: none;
   border-radius: 4px;
-  background-color: rgb(179, 164, 194);
-  
+  background-color: rgb(179, 164, 194);  
 }
+
 .namebutton:hover {
   font-family: 'Staatliches', cursive;
   background-color: rgb(125, 173, 245);
@@ -327,7 +286,6 @@ padding: 30px;
   font-weight: 50;
 }
 
-
 .favorites {
   height: 1000px;
   background-image: url("./dark-brick.jpg");
@@ -342,8 +300,7 @@ padding: 30px;
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 30px;
-  font-weight: thin; 
-  
+  font-weight: thin;   
 }
 
 .favoritesdiv {
@@ -430,29 +387,27 @@ margin-top:60px;
   border: none;
   border-radius: 2px;
   background-color: rgb(179, 164, 194);  
-  margin-top:15px;
+  margin-top:45px;
   align-self: center;
 }
+
 .favoritevideobutton:hover {
   font-family: 'Staatliches', cursive;
   font-size: 14px;
   border: none;
   border-radius: 2px;
   background-color: rgb(125, 173, 245);  
-  margin-top:15px;
+  margin-top:20px;
   align-self: center;
 }
-
 
 .reloadVideoButton {
   display: flex;
   justify-content:center;
   align-content: center;
-
 }
 
-.videobutton {
-  
+.videobutton {  
   font-family: 'Staatliches', cursive;
   font-size: 16px;
   border: none;
@@ -462,31 +417,12 @@ margin-top:60px;
   margin-top:20px;
   align-self: center;
 }
+
 .videobutton:hover {
   font-family: 'Staatliches', cursive;
   font-size: 16px;
-  background-color: rgb(125, 173, 245);
-  
+  background-color: rgb(125, 173, 245);  
 }
-
-/* .favorites {
-  height: 1000px;
-  background-image: url("./dark-brick.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  min-height: 100%;
-  font-family: 'Staatliches', cursive;
-
- font-weight: 50;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-size: 30px;
-  font-weight: thin; 
-} */
-
-
 
 .aboutus {
   
@@ -534,16 +470,22 @@ margin-top:60px;
   vertical-align: center;
 
 }
+
 .twitterlogo {
   margin-left: 10px;
   margin-right: 10px;
 }
+
 .linkedinlogo {
-  margin-right: 10px;
-  
+  margin-right: 10px;  
 }
+
 .githublogo {
   margin-left: 10px;
+}
+
+.ethanaboutus {
+  padding:30px;
 }
 
 h3 {
@@ -622,6 +564,7 @@ h2 {
     transform: rotate(360deg);
   }
 }
+
 .glow {
   border: 4px dashed rgb(90, 14, 151);
   animation: glow .4s infinite alternate;

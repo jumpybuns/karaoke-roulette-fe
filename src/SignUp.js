@@ -1,12 +1,9 @@
 import React, { Component } from 'react'
-// import request from 'superagent';
 import { signUp } from './utils';
 import { Link } from 'react-router-dom';
 import karaokeicon from './newkaraokeicon.png'
 
-
 export default class SignUp extends Component {
-
     state = {
         email: '',
         password: '',
@@ -17,10 +14,8 @@ export default class SignUp extends Component {
     handleSubmit = async (e) => {
         e.preventDefault();
         try {
-
             this.setState({ loading: true, error: null })
             const user = await signUp(this.state)
-
 
             this.setState({ loading: false })
 
@@ -34,31 +29,27 @@ export default class SignUp extends Component {
         }
     }
 
-
-
     render() {
         return (
             <div className='signup'>
-                <h2>Please sign up below</h2>
+                    <h2>Please sign up below</h2>
                 <form className='submitform' onSubmit={this.handleSubmit}>
                     <label className="email">
-                        {this.state.error && <div style={{ color: 'red' }}>{this.state.error}</div>}
+                                {this.state.error && <div style={{ color: 'red' }}>{this.state.error}</div>}
                         <input placeholder='Enter email Here'
-                            onChange={(e) => this.setState({ email: e.target.value })}
-                            value={this.state.email} />
+                                onChange={(e) => this.setState({ email: e.target.value })}
+                                value={this.state.email} />
                     </label>
-                    <label className="pass">
 
+                    <label className="pass">
                         <input placeholder='Enter Password Here'
                             onChange={(e) => this.setState({ password: e.target.value })}
                             value={this.state.password} type="password" />
                     </label>
-
                     {
                         this.state.loading
                             ? 'loading...'
                             : <button className='signupbutton'> Submit</button>
-
                     }
                     <div className='linkdiv'>
                         <Link className='loginlink' to='login'>Click here to navigate to Login Page</Link>
@@ -71,8 +62,6 @@ export default class SignUp extends Component {
                     </div>
                 </form>
             </div>
-
-
         )
     }
 }
