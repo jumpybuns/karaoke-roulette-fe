@@ -25,7 +25,7 @@ export default class AboutUs extends Component {
 
                     <img className='profileimg' alt="Sarah" src={Sarah} height="150px" />
                     <h3 className='name'>Sarah Skillen</h3>
-                    <p>Rhone is a software engineer, nature enthusiast, and mom of two living in Vancouver, WA. <br /> Their karaoke got-to song is Run D Mc.</p>
+                    <p>Sarah is a software engineer, nature enthusiast, and mom of two living in Vancouver, WA. <br /> Their karaoke got-to song is Run D Mc.</p>
                     <span className='icons'>
                         <a href="https://www.linkedin.com/in/sarah-skillen-7339b61b8/">
                             <img className='linkedinlogo' alt="linkedinlogo" src={Linkedin} height="25px" width='25px' />
